@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages/normalize.css">
+    <link rel="stylesheet" href="../index-style.css">
+    <link rel="shortcut icon" type="icon/png" href="../assets/icons/logo-avion.png">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Agregamos el navegador -->
+        <section class="encabezado">
+            <article>
+                <nav>
+                    <ul class="encabezado__menu">
+                        <li><a href="../index.html"><img src="../assets/icons/logo-avion.png" alt="logo"
+                                    width="46vw"></a></li>
+                        <li><a href="./section1.html"><img src="../assets/icons/nosotros-blanco.png"
+                                    alt="icono sobre nosotros" width="25vw"> Sobre nosotros </a> </li>
+                        <!-- <ul class="encabezado__submenu">
+                            <li>¿Quienes somos?</li>
+                            <li>¿Cómo inicio este proyecto?</li>
+                            <li>¿Cómo comenzamos?</li>
+                            <li>Nuestro objetivo</li>
+                        </ul> -->
+                        <li><a href="./section2.html"><img src="../assets/icons/galeria-blanco.png"
+                                    alt="icono de galeria" width="25vw">
+                                Galería</a></li>
+                        <!-- <ul class="encabezado__submenu">
+                            <li>Noruega</li>
+                            <li>Dinamarca</li>
+                            <li>Portugal</li>
+                            <li>Italia</li>
+                            <li>Suiza</li>
+                        </ul> -->
+                        <li><a href="./section3.html"><img src="../assets/icons/equipo-blanco.png" alt="icono grupo"
+                                    width="25vw"> ¿Cómo
+                                empezar?</a></li>
+                        <!-- <ul class="encabezado__submenu">
+                            <li>¿Cómo organizarme?</li>
+                            <li>¿Qué país me gusta?</li>
+                            <li>¿Por qué?</li>
+                            <li>Calendario organizacional</li>
+                        </ul> -->
+                        <li><a href="./section4.html"><img src="../assets/icons/contacto-blanco.png"
+                                    alt="icono contacto" width="25vw"> Contacto</a></li>
+                        <!-- <ul class="encabezado__submenu">
+                            <li>Programa una entrevista con nosotros</li>
+                            <li>Comentarios</li>
+                            <li>Datos de contacto</li>
+                        </ul> -->
+                    </ul>
+                </nav>
+            </article>
+        </section>
+    </header>
+
+    <main class="main-contacto">
+        <section class="temas-principales-section4">
+            <article class="portada__section4">
+                <h1>Contacto</h1>
+            </article>
+
+            <article class="formulario__entrevista">
+                <form action="">
+                    <!-- El atributo action posee la url de destino del formulario.
+                    Las URL de destino suelen ser programas o códigos de servidor, ya sea Java, PHP, Node, Asp. Estos recuperan la información del formulario, la manipulan y nos devuelven una página nueva HTML  -->
+                    <fieldset>
+                        <legend>Programa una entrevista con nosotros</legend>
+
+                        <div>
+                            <label for="campo-usuario">Nombre:</label>
+                            <input type="text" id="campo-usuario" name="Nombre">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Apellido:</label>
+                            <input type="text" id="campo-usuario" name="Apellido">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Teléfono:</label>
+                            <input type="text" id="campo-usuario" name="Teléfono">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">E-mail:</label>
+                            <input type="email" id="campo-usuario" name="Email">
+                        </div>
+                        <div>
+                            <label for="estado-civil">Estado civil:</label>
+                            <select name="estado-civil" id="">
+                                <option value="S">Soltero</option>
+                                <option value="C">Casado</option>
+                                <option value="D">Divorciado</option>
+                                <option value="E">En concubinato</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Fecha y hora disponible:</label>
+                            <input type="datetime-local" id="campo-usuario" name="Fecha y hora">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">País:</label>
+                            <input type="text" id="campo-usuario" name="pais">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Motivo de la entrevista:</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <span>¿Querés recibir noticias actualizadas?</span>
+                            <label for="Si">Si</label>
+                            <input type="radio" name="noticias" value="noticias-si">
+                            <label for="No">No</label>
+                            <input type="radio" name="noticias" value="noticias-no">
+                        </div>
+                        <div>
+                            <label for="acepta-terminos">¿Aceptas nuestros terminos y condiciones?</label>
+                            <input type="checkbox" name="acepta-terminos" id="acepta-terminos" value="acepta-terminos">
+                        </div>
+
+                        <div class="formulario__entrevista__container--botons">
+                            <input class="boton" type="reset" value="Limpiar formulario">
+                            <input class="boton" type="submit" value="Enviar formulario">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+            <!-- Comentarios -->
+            <article class="formulario__comentarios">
+                <form action="">
+                    <fieldset>
+                        <legend>Dejanos tus comentarios</legend>
+                        <p>Tu opinión vale mucho para nosotros, crecemos en base a tus necesidades</p>
+                        <div>
+                            <label for="campo-usuario">Nombre:</label>
+                            <input type="text" id="campo-usuario" name="Nombre">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Apellido:</label>
+                            <input type="text" id="campo-usuario" name="Apellido">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">E-mail:</label>
+                            <input type="email" id="campo-usuario" name="Email">
+                        </div>
+                        <div>
+                            <label for="campo-usuario">Dejanos tu comentario:</label>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input class="formulario__comentario--boton" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <img src="../assets/img/caricatura2.png" alt="imagen de caricatura" width="280vh">
+            </article>
+            <!-- Datos de contacto -->
+            <section class="datos-contacto">
+                <article>
+                    <h3 class="datos" id="datos">Datos de contacto</h3>
+                    <p>telefono: 11-11001100 </p>
+                    <p> E-mail: cele.delgado.2013@gmail.com</p>
+                    <br>
+                    <p> También podrás encontrarnos en nuestras redes sociales:
+                    </p>
+                    <div class="datos__links">
+                        <a href="https://www.instagram.com/viajecitook/"> <img src="../assets/icons/instagram-color.png"
+                                alt="logo instagram" width="40vw"></a>
+                        <a href="https://www.tiktok.com/@viajecitook?lang=es"><img
+                                src="../assets/icons/tik-tok-color.png" alt="logo tik-tok" width="40vw"></a>
+                        <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
+                                src="../assets/icons/youtube-color.png" alt="logo you tube" width="40vw"></a>
+                    </div>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Pie de página -->
+        <article class="pie__pagina--redes__sociales">
+            <a href="https://www.instagram.com/viajecitook/"> <img src="../assets/icons/insta-blanco.png"
+                    alt="logo instagram" width="25vw"></a>
+            <a href="https://www.tiktok.com/@viajecitook?lang=es"><img src="../assets/icons/tiktok-blanco.png"
+                    alt="logo tik-tok" width="25vw"></a>
+            <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
+                    src="../assets/icons/you-tube-blanco.png" alt="logo you tube" width="25vw"></a>
+            <a href="./section4.html#datos"><img src="../assets/icons/contacto-blanco.png" alt="logo de contacto"
+                    width="25vw"></a>
+            <img src="../assets/icons/idioma-blanco.png" alt="logo de idioma" width="25vw">
+            <!--Agregar inglés-->
+        </article>
+        </section>
+
+    </footer>
+</body>
+
+</html>
