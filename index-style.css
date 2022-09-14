@@ -40,6 +40,12 @@ li {
     padding: 5px 20px;
     text-align: justify;
 }
+.encabezado__menu li a:focus {
+    background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 /****************************************************************************/
 
@@ -65,33 +71,34 @@ li {
 }
 /* tracking-in-expand */
 .title {
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: title 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: title 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 @-webkit-keyframes title {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
+}
+@keyframes title {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+        letter-spacing: -0.5em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }  
+}  
+
 
 .container__slider{
     max-width: 1000px;
@@ -172,8 +179,8 @@ li {
 
 /******************************************************************/
 .temas__principales--info--seccion {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin: 120px 30px 0px 30px;
     padding: 10px 5px;
     align-items: center;
@@ -181,6 +188,44 @@ li {
     top: 80%;
     background-color: rgb(255, 255, 255);
 }
+/* slide-in-elliptic-top-fwd */
+.temas__principales--info--seccion {
+	-webkit-animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes temas__principales--info--seccion {
+    0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+    }
+}
+@keyframes temas__principales--info--seccion {
+    0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+    }
+}
+
 .temas__principales--info--seccion__a {
     display: flex;
     flex-direction: column;
@@ -194,7 +239,7 @@ li {
 .temas__principales--info--seccion__a p {
     text-align: justify;
     padding: 5px;
-    margin: 10px 50px;
+    margin: 10px 20px;
 }
 .temas__principales--info--seccion img {
     border: 1.5px black solid;
@@ -353,6 +398,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.link__paises--contenedor__menu li a:active {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 10px 20px;
+    border-radius: 13px;
+    border: 2px rgb(255, 255, 255) solid;
 }
 .link__paises--menu {
     list-style: none;
@@ -633,12 +684,13 @@ li {
     
 }
 .formulario__entrevista {
-    margin: 20px 20px;
-    padding: 10px 20px;
+    margin: 30px 18vh;
+    padding: 20px 10px;
     display: flex;
     align-content: center;
     justify-content: center;
     text-align: start;
+    width: 20%;
 }
 .formulario__entrevista form {
     background-color: rgba(175, 175, 175, 0.623);
@@ -659,20 +711,26 @@ li {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
     border-radius: 15px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items:center;
     font-size: 1rem;
-    margin: 25px 8vh 25px 8vh;
+    margin: 25px 15px 25px 15px;
     font-size: 1rem;
     
+}
+.formulario__entrevista__container--botons input:focus {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1.5px red solid;
+    color: rgb(255, 0, 0);
 }
 
 .formulario__comentarios {
     margin: 20px 10px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     display: flex;
     outline: none;
     border: none;
@@ -683,7 +741,7 @@ li {
     border-radius: 15px;
     height: 100%;
     margin-top: 7%;
-    margin-left: 10%;
+    margin-left: 2%;
 }
 .formulario__comentarios fieldset {
     border: none;
@@ -694,22 +752,27 @@ li {
     font-weight: bold;
 }
 .formulario__comentarios p {
-    text-align: center;
-    padding: 5px 20px;
+    text-align: start;
+    padding: 15px 2px;
     font-weight: bold;
 }
 .formulario__comentario--boton {
     color: rgb(255, 255, 255);
     background-color: rgb(255, 0, 0);
     border-radius: 15px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 45%;
-    margin: 10px 35vh;
+    margin: 10px 13vh;
     font-size: 1.1rem;
+}
+.formulario__comentario--boton:focus {
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border: 2px red solid;
 }
 
 .formulario__comentarios img {
@@ -770,6 +833,18 @@ li {
 .temas__secundarios--video {
     display: flex;
 }
+.pie__pagina--menu__footer li a:focus {
+    background-color: rgba(255, 195, 65, 0.644);
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px rgb(255, 102, 0) solid;
+}
+.pie__pagina--redes__sociales a:active {
+    background-color: rgba(255, 0, 0, 0.295);
+    padding: 10px 20px;
+    border-radius: 13px;
+    border: 1px red solid;
+}
 
 /************FOOTER*********************/
 .pie__pagina {
@@ -786,6 +861,7 @@ li {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    height: 8vh;
 }
 .pie__pagina--menu__footer a {
     text-decoration: none;
@@ -812,6 +888,36 @@ li {
     justify-content: center;
     text-align: center;
 }
+/* text-focus-in */
+.pie__pagina--eslogan__b {
+	-webkit-animation: pie__pagina--eslogan__b 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: pie__pagina--eslogan__b 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes pie__pagina--eslogan__b {
+    0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+@keyframes pie__pagina--eslogan__b {
+    0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+    }
+}
+
 .pie__pagina--logo__avion {
     display: flex;
     justify-content: center;
@@ -853,7 +959,7 @@ li {
     height: 60vh;
 }
 .pie__pagina--menu__footer{
-    height: 5.5vh;
+    height: 8vh;
     padding: 1px 25px;
 }
 /*****Estructura del Section-1: vista Tablet. Sobre Nosotros*****/
@@ -1081,6 +1187,12 @@ li {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+    .link__paises--contenedor__menu li a:hover {
+        background-color: rgba(255, 255, 255, 0.295);
+        padding: 10px 20px;
+        border-radius: 13px;
+        border: 2px rgb(255, 255, 255) solid;
     }
     .link__paises--menu li {
         padding: 3px 55px;
