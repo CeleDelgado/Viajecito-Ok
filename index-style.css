@@ -114,9 +114,6 @@ li {
 }
 /**************************************************************************/
 
-.temas__principales--slider {
-    
-}
 /********Slider***************/
 .title{
     text-align: center;
@@ -450,9 +447,6 @@ li {
 
 /****************PARALLAX*******************/
 
-.article__pais {
-
-}
 .article__pais--parallax{
 	background-attachment: fixed;
 	background-position: center;
@@ -883,12 +877,7 @@ li {
 }
 
 /************FOOTER*********************/
-.pie__pagina {
 
-}
-.pie__pagina--contedor {
-    
-}
 .pie__pagina--menu__footer {
     list-style: none;
     display: flex;
