@@ -13,128 +13,270 @@
 </head>
 
 <body>
+    <!-- Damos un div segun cada seccion de la pagina para maquetear con bootstrap, comenzamos por el header -->
     <header>
-        <!-- Agregamos el navegador -->
-        <section class="encabezado">
-            <!-- Agregamos el navegador -->
-            <article>
-                <nav>
-                    <ul class="encabezado__menu">
-                        <li><a href="../index.html"><img src="../assets/icons/logo-avion.png" alt="logo" width="42vw">
-                            </a></li>
-                        <li><a href="./section1.html"><img src="../assets/icons/nosotros-blanco.png"
-                                    alt="icono sobre nosotros" width="25vw">Sobre nosotros </a> </li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>¿Quienes somos?</li>
-                            <li>¿Cómo inicio este proyecto?</li>
-                            <li>¿Cómo comenzamos?</li>
-                            <li>Nuestro objetivo</li>
-                        </ul> -->
-                        <li><a href="./section2.html"><img src="../assets/icons/galeria-blanco.png"
-                                    alt="icono de galeria" width="25vw">
-                                Galería</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>Noruega</li>
-                            <li>Dinamarca</li>
-                            <li>Portugal</li>
-                            <li>Italia</li>
-                            <li>Suiza</li>
-                        </ul> -->
-                        <li><a href="./section3.html"><img src="../assets/icons/equipo-blanco.png" alt="icono grupo"
-                                    width="25vw"> ¿Cómo
-                                empezar?</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>¿Cómo organizarme?</li>
-                            <li>¿Qué país me gusta?</li>
-                            <li>¿Por qué?</li>
-                            <li>Calendario organizacional</li>
-                        </ul> -->
-                        <li><a href="./section4.html"><img src="../assets/icons/contacto-blanco.png"
-                                    alt="icono contacto" width="25vw"> Contacto</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>Programa una entrevista con nosotros</li>
-                            <li>Comentarios</li>
-                            <li>Datos de contacto</li>
-                        </ul> -->
-                    </ul>
-                </nav>
-            </article>
-        </section>
+        <!-- Agregamos el navegador y una fila entera para el mismo -->
+        <div class="container-fluid">
+            <div class="row-encabezado">
+                <!-- en una vista grande, mediana o pequeña quiero que ocupe las 12 columnas de mi fila -->
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <!--El Maximo de width es: sm: 576px, md: 768px,  lg: 992px, -->
+
+                    <!-- Abrimos el nav -->
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <a class="navbar-brand" href="../index.html"><img class="logo"
+                                src="../assets/icons/logo-avion.png" alt="logo" width="46vw"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <!-- ver como hacer este boton que al abrirlo se transforme en una X para cerrarlo -->
+                        </button>
+                        <!-- links -->
+                        <div class="collapse navbar-collapse" class="d-flex justify-content-center"
+                            id="navbarNavDropdown">
+                            <ul class="encabezado__menu navbar-nav">
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="../pages/section1.html"><img
+                                                    src="../assets/icons/nosotros-blanco.png" alt="icono sobre nosotros"
+                                                    width="25vw"> Sobre nosotros</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section1.html#quienes__somos">¿Quienes
+                                                        somos?</a>
+                                                </button></li>
+
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section1.html#como__inicio">¿Cómo inicio este
+                                                        proyecto?</a></button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section1.html#como__empezamos">¿Cómo
+                                                        comenzamos?</a> </button> </li>
+
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section1.html#nuestro__objetivo">Nuestro
+                                                        objetivo</a> </button> </li>
+
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="pages/contacto.html">Contacto</a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="../pages/section2.html"><img
+                                                    src="../assets/icons/galeria-blanco.png" alt="icono de galeria"
+                                                    width="25vw">
+                                                Galería</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#noruega">Noruega</a> </button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#dinamarca">Dinamarca
+                                                    </a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#finlandia">Finlandia</a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#islandia">Islandia</a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#suiza">Suiza</a> </button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#canada">Canadá</a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section2.html#portugal">Portugal</a></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="pages/servicios.html">Nosotros</a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="../pages/section3.html"><img
+                                                    src="../assets/icons/equipo-blanco.png" alt="icono grupo"
+                                                    width="25vw">
+                                                ¿Cómo empezar?</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section3.html#como__organizarme">¿Cómo
+                                                        organizarme?</a> </button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section3.html#que__pais__me__gusta">¿Qué país
+                                                        me
+                                                        gusta?</a> </button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="../pages/section3.html#calendario"> Calendario
+                                                        organizacional</a> </button></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <!-- Agregamos un boton desplegable, para los submenus -->
+                                <div class="dropdown active">
+                                    <li class="nav-item active"></li>
+                                    <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <a class="nav-link" href="../pages/section4.html"><img
+                                                src="../assets/icons/contacto-blanco.png" alt="icono contacto"
+                                                width="25vw">
+                                            Contacto</a>
+                                    </button>
+                                    <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="../pages/section4.html#programa__una__entrevista">
+                                                    Programa
+                                                    una entrevista</a></button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="../pages/section4.html#comentarios">Comentarios</a>
+                                            </button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="../pages/section4.html#datos">Datos de contacto</a>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
-        <section class="portada">
-            <h1>| Sobre nosotros |</h1>
-        </section>
+        <!-- Comenzamos a maquetear con bootstrap -->
+        <div class="container-fluid">
+            <section class="temas-principales-section1">
 
-        <section class="temas-principales-section1">
-            <article class="container__a">
-                <img class="container__a--img--a" src="../assets/img/nosotros-asensor.JPG" alt="imagen en el asensor"
-                    width="250vh">
-                <img class="container__a--img--b" src="../assets/img/colon.jpg" alt="imagen en la orilla del río"
-                    width="150vh">
-                <div class="container__a--info">
-                    <h2>¿Quienes somos?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel distinctio
-                        alias a
-                        esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro, quasi aut nemo
-                        ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id repellat similique
-                        aspernatur minus, dignissimos et, adipisci totam recusandae doloribus beatae fuga maiores fugit
-                        a reiciendis eius natus expedita inventore aliquam?
-                    </p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <section class="portada">
+                            <h1>| Sobre nosotros |</h1>
+                        </section>
+                    </div>
                 </div>
-            </article>
 
-            <article class="container__b">
-                <div class="container__b--info--a">
-                    <h2>¿Cómo inicio este proyecto?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel distinctio
-                        alias a
-                        esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro, quasi aut nemo
-                        ipsam.
-                    </p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <article class="container__a">
+                            <img class="container__a--img--a" src="../assets/img/nosotros-asensor.JPG"
+                                alt="imagen en el asensor" width="250vh">
+                            <img class="container__a--img--b" src="../assets/img/colon.jpg"
+                                alt="imagen en la orilla del río" width="150vh">
+                            <div class="container__a--info">
+                                <h2 id="quienes__somos">¿Quienes somos?</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel
+                                    distinctio
+                                    alias a
+                                    esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro,
+                                    quasi aut nemo
+                                    ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id repellat
+                                    similique
+                                    aspernatur minus, dignissimos et, adipisci totam recusandae doloribus beatae
+                                    fuga maiores fugit
+                                    a reiciendis eius natus expedita inventore aliquam?
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-                <div class="container__b--info--b">
-                    <h2>¿Cómo comenzamos?</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel distinctio
-                        alias a
-                        esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro, quasi aut nemo
-                        ipsam.
-                    </p>
+                <div class="row">
+                    <article class="container__b">
+                        <div class="col-lg-6 col-md-5 col-xs-12">
+                            <div class="container__b--info--a">
+                                <h2 id="como__inicio">¿Cómo inicio este proyecto?</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel
+                                    distinctio
+                                    alias a
+                                    esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro,
+                                    quasi aut nemo
+                                    ipsam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-xs-12">
+                            <div class="container__b--info--b">
+                                <h2 id="como__empezamos">¿Cómo comenzamos?</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel
+                                    distinctio
+                                    alias a
+                                    esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro,
+                                    quasi aut nemo
+                                    ipsam.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="container__c">
-                <div class="container__c--info">
-                    <h2>Nuestro objetivo</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel distinctio
-                        alias a
-                        esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro, quasi aut nemo
-                        ipsam.
-                    </p>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <article class="container__c">
+                            <div class="container__c--info">
+                                <h2 id="nuestro__objetivo">Nuestro objetivo</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel
+                                    distinctio
+                                    alias a
+                                    esse assumenda iure sunt harum ad non inventore cum ducimus pariatur porro,
+                                    quasi aut nemo
+                                    ipsam.
+                                </p>
+                            </div>
+                            <img class="container__c--img" src="../assets/img/cristo-redentor-c.jpg"
+                                alt="imagen del Cristo Redentor- Brasil" width="400vw">
+                        </article>
+                    </div>
                 </div>
-                <img class="container__c--img" src="../assets/img/cristo-redentor-c.jpg"
-                    alt="imagen del Cristo Redentor- Brasil" width="400vw">
-            </article>
-        </section>
+            </section>
     </main>
 
     <footer>
+        <!-- Comenzamos a maquetear con bootstrap -->
         <!-- Pie de página -->
-        <section class="pie__pagina">
-            <!-- Pie de página -->
-            <article class="pie__pagina--redes__sociales">
-                <a href="https://www.instagram.com/viajecitook/"> <img src="../assets/icons/insta-blanco.png"
-                        alt="logo instagram" width="22vw"></a>
-                <a href="https://www.tiktok.com/@viajecitook?lang=es"><img src="../assets/icons/tiktok-blanco.png"
-                        alt="logo tik-tok" width="22vw"></a>
-                <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
-                        src="../assets/icons/you-tube-blanco.png" alt="logo you tube" width="22vw"></a>
-                <a href="./section4.html#datos"><img src="../assets/icons/llamada-blanco.png" alt="logo de contacto"
-                        width="22vw"></a>
-                <img src="../assets/icons/idioma-blanco.png" alt="logo de idioma" width="22vw">
-                <!--Agregar inglés-->
-            </article>
-        </section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+
+                    <section class="pie__pagina">
+                        <article class="pie__pagina--redes__sociales">
+                            <a href="https://www.instagram.com/viajecitook/"> <img
+                                    src="../assets/icons/insta-blanco.png" alt="logo instagram" width="22vw"></a>
+                            <a href="https://www.tiktok.com/@viajecitook?lang=es"><img
+                                    src="../assets/icons/tiktok-blanco.png" alt="logo tik-tok" width="22vw"></a>
+                            <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
+                                    src="../assets/icons/you-tube-blanco.png" alt="logo you tube" width="22vw"></a>
+                            <a href="./section4.html#datos"><img src="../assets/icons/llamada-blanco.png"
+                                    alt="logo de contacto" width="22vw"></a>
+                            <img src="../assets/icons/idioma-blanco.png" alt="logo de idioma" width="22vw">
+                            <!--Agregar inglés-->
+                        </article>
+                    </section>
+
+                </div>
+            </div>
+        </div>
 
     </footer>
     <script src="../pages/bootstrap.bundle.min.js"></script>

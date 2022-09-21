@@ -16,240 +16,416 @@
 <body>
     <!--comenzamos con el encabezado de la página Web,esto debe copiarse en todos los headers de los html-->
     <header>
-        <section class="encabezado">
-            <!-- Agregamos el navegador -->
-            <article>
-                <nav>
-                    <ul class="encabezado__menu">
-                        <li><a href="./index.html"><img src="./assets/icons/logo-avion.png" alt="logo" width="42vw"></a>
-                        </li>
-                        <li><a href="./pages/section1.html"><img src="./assets/icons/nosotros-blanco.png"
-                                    alt="icono sobre nosotros" width="25vw"> Sobre nosotros</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>¿Quienes somos?</li>
-                            <li>¿Cómo inicio este proyecto?</li>
-                            <li>¿Cómo comenzamos?</li>
-                            <li>Nuestro objetivo</li>
-                        </ul> -->
-                        <li><a href="./pages/section2.html"><img src="./assets/icons/galeria-blanco.png"
-                                    alt="icono de galeria" width="25vw"> Galería</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>Noruega</li>
-                            <li>Dinamarca</li>
-                            <li>Finlandia</li>
-                            <li>Islandia</li>
-                            <li>Suiza</li>
-                            <li>Canadá</li>
-                            <li>Portugal</li>
-                        </ul> -->
-                        <li><a href="./pages/section3.html"><img src="./assets/icons/equipo-blanco.png"
-                                    alt="icono grupo" width="25vw">
-                                ¿Cómo empezar?</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>¿Cómo organizarme?</li>
-                            <li>¿Qué país me gusta?</li>
-                            <li>¿Por qué?</li>
-                            <li>Calendario organizacional</li>
-                        </ul> -->
-                        <li><a href="./pages/section4.html"><img src="./assets/icons/contacto-blanco.png"
-                                    alt="icono contacto" width="25vw"> Contacto</a></li>
-                        <!-- <ul class="encabezado__submenu">
-                            <li>Programa una entrevista con nosotros</li>
-                            <li>Comentarios</li>
-                            <li>Datos de contacto</li>
-                        </ul> -->
-                    </ul>
-                </nav>
-            </article>
-        </section>
+        <!-- Agregamos el navegador y una fila entera para el mismo -->
+        <div class="container-fluid">
+            <div class="row-encabezado">
+                <!-- en una vista grande, mediana o pequeña quiero que ocupe las 12 columnas de mi fila -->
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <!--El Maximo de width es: sm: 576px, md: 768px,  lg: 992px, -->
+
+                    <!-- Abrimos el nav -->
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <a class="navbar-brand" href="./index.html"><img class="logo"
+                                src="./assets/icons/logo-avion.png" alt="logo" width="46vw"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <!-- ver como hacer este boton que al abrirlo se transforme en una X para cerrarlo -->
+                        </button>
+                        <!-- links -->
+                        <div class="collapse navbar-collapse" class="d-flex justify-content-center"
+                            id="navbarNavDropdown">
+                            <ul class="encabezado__menu navbar-nav">
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="./pages/section1.html"><img
+                                                    src="./assets/icons/nosotros-blanco.png" alt="icono sobre nosotros"
+                                                    width="25vw"> Sobre nosotros</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section1.html#quienes__somos">¿Quienes somos?</a>
+                                                </button></li>
+
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section1.html#como__inicio">¿Cómo inicio este
+                                                        proyecto?</a></button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section1.html#como__empezamos">¿Cómo
+                                                        comenzamos?</a> </button> </li>
+
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section1.html#nuestro__objetivo">Nuestro
+                                                        objetivo</a> </button> </li>
+
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="pages/contacto.html">Contacto</a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="./pages/section2.html"><img
+                                                    src="./assets/icons/galeria-blanco.png" alt="icono de galeria"
+                                                    width="25vw">
+                                                Galería</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#noruega">Noruega</a> </button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#dinamarca">Dinamarca </a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#finlandia">Finlandia</a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#islandia">Islandia</a></button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#suiza">Suiza</a> </button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#canada">Canadá</a></button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section2.html#portugal">Portugal</a></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                <div class="dropdown active">
+                                    <li class="nav-item active">
+                                        <!-- <a class="nav-link" href="pages/servicios.html">Nosotros</a> -->
+                                        <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <a class="nav-link" href="./pages/section3.html"><img
+                                                    src="./assets/icons/equipo-blanco.png" alt="icono grupo"
+                                                    width="25vw">
+                                                ¿Cómo empezar?</a>
+                                        </button>
+                                        <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section3.html#como__organizarme">¿Cómo
+                                                        organizarme?</a> </button>
+                                            </li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section3.html#que__pais__me__gusta">¿Qué país me
+                                                        gusta?</a> </button></li>
+                                            <li><button class="dropdown-item" type="button"><a
+                                                        href="./pages/section3.html#calendario"> Calendario
+                                                        organizacional</a> </button></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <!-- Agregamos un boton desplegable, para los submenus -->
+                                <div class="dropdown active">
+                                    <li class="nav-item active"></li>
+                                    <button class="btn" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <a class="nav-link" href="./pages/section4.html"><img
+                                                src="./assets/icons/contacto-blanco.png" alt="icono contacto"
+                                                width="25vw">
+                                            Contacto</a>
+                                    </button>
+                                    <ul class="encabezado__submenu dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="./pages/section4.html#programa__una__entrevista"> Programa
+                                                    una entrevista</a></button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="./pages/section4.html#comentarios">Comentarios</a> </button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                                    href="./pages/section4.html#datos">Datos de contacto</a> </button>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
-        <section class="temas__principales">
+        <!-- Comenzamos a maquetear con bootstrap -->
+        <div class="container-fluid">
+            <section class="temas__principales">
 
-            <div class="temas__principales--slider">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="temas__principales--slider">
+                            <h1 class="title">Bienvenidos a "Viajecito Ok"</h1>
+                            <div class="container__slider">
 
-                <h1 class="title">Bienvenidos a "Viajecito Ok"</h1>
-                <div class="container__slider">
+                                <div class="container">
+                                    <input type="radio" name="slider" id="item-1" checked>
+                                    <input type="radio" name="slider" id="item-2">
+                                    <input type="radio" name="slider" id="item-3">
 
-                    <div class="container">
-                        <input type="radio" name="slider" id="item-1" checked>
-                        <input type="radio" name="slider" id="item-2">
-                        <input type="radio" name="slider" id="item-3">
+                                    <div class="cards">
+                                        <label class="card" for="item-1" id="selector-1">
+                                            <img src="./assets/img/portada.jpg"
+                                                alt="imagen de portada, fotografia en la playa"><a
+                                                href="#titulo-1">¿Querés emigrar?</a>
+                                        </label>
+                                        <label class="card" for="item-2" id="selector-2">
+                                            <img src="./assets/img/playa.jpg" alt="imagen en la costa de una playa"
+                                                width="700vh"><a href="#titulo-2">¿Qué tener en cuenta a la hora de
+                                                escoger un país?</a>
+                                        </label>
+                                        <label class="card" for="item-3" id="selector-3">
+                                            <img src="./assets/img/gulag-bebe.jpg"
+                                                alt="imagen de gato bebe con un peluche de ratón"><a
+                                                href="#titulo-5">Todo sobre tu
+                                                mascota</a>
+                                        </label>
+                                    </div>
 
-                        <div class="cards">
-                            <label class="card" for="item-1" id="selector-1">
-                                <img src="./assets/img/portada.jpg" alt="imagen de portada, fotografia en la playa"><a
-                                    href="#titulo-1">¿Querés emigrar?</a>
-                            </label>
-                            <label class="card" for="item-2" id="selector-2">
-                                <img src="./assets/img/playa.jpg" alt="imagen en la costa de una playa" width="700vh"><a
-                                    href="#titulo-2">¿Qué tener en cuenta a la hora de escoger un país?</a>
-                            </label>
-                            <label class="card" for="item-3" id="selector-3">
-                                <img src="./assets/img/gulag-bebe.jpg"
-                                    alt="imagen de gato bebe con un peluche de ratón"><a href="#titulo-5">Todo sobre tu
-                                    mascota</a>
-                            </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <article class="temas__principales--info--general">
-                <section class="temas__principales--info--seccion">
-                    <article>
-                        <div class="temas__principales--info--seccion__a">
-                            <h3 id="titulo-1">¿Querés emigrar?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore necessitatibus
-                                repellendus
-                                ipsum.
-                                Porro magnam explicabo ex dolorum velit officiis! Iure temporibus esse dolore nobis
-                                ducimus
-                                dicta maiores aspernatur, incidunt obcaecati?</p>
+                <article class="temas__principales--info--general">
+                    <section class="temas__principales--info--seccion">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-5 col-xs-12">
+                                <div class="temas__principales--info--seccion__a">
+                                    <h3 id="titulo-1">¿Querés emigrar?</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                        necessitatibus
+                                        repellendus
+                                        ipsum.
+                                        Porro magnam explicabo ex dolorum velit officiis! Iure temporibus esse
+                                        dolore nobis
+                                        ducimus
+                                        dicta maiores aspernatur, incidunt obcaecati?</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-5 col-xs-12">
+                                <div class="temas__principales--info--img">
+                                    <img src="./assets/img/portada.jpg" alt="imagen de portada, fotografia en la playa">
+                                </div>
+                            </div>
                         </div>
+                    </section>
+
+                    <article class="temas__principales--info--general">
+                        <section class="temas__principales--info--seccion">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-xs-12">
+                                    <div class="temas__principales--info--img">
+                                        <img src="./assets/img/playa.jpg" alt="imagen en la costa de una playa"
+                                            width="700vh">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-xs-12">
+                                    <article>
+                                        <div class="temas__principales--info--seccion__a">
+                                            <h3 id="titulo-2" class="titulo-2">¿Qué tener en cuenta a la hora de escoger un país?</h3>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque est amet
+                                                atque quidem
+                                                laboriosam
+                                                earum, deleniti, corrupti consequatur cupiditate perspiciatis, animi
+                                                odio id
+                                                sit
+                                                blanditiis
+                                                at?
+                                                Dolore in dolorum voluptatem!</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
                     </article>
-                    <div class="temas__principales--info--img">
-                        <img src="./assets/img/portada.jpg" alt="imagen de portada, fotografia en la playa">
-                    </div>
-                </section>
-
-                <section class="temas__principales--info--seccion">
-                    <div class="temas__principales--info--img">
-                        <img src="./assets/img/playa.jpg" alt="imagen en la costa de una playa" width="700vh">
-                    </div>
-
-                    <article>
-                        <div class="temas__principales--info--seccion__a">
-                            <h3 id="titulo-2">¿Qué tener en cuenta a la hora de escoger un país?</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque est amet atque quidem
-                                laboriosam
-                                earum, deleniti, corrupti consequatur cupiditate perspiciatis, animi odio id sit
-                                blanditiis
-                                at?
-                                Dolore in dolorum voluptatem!</p>
-                        </div>
+                    <article class="temas__principales--info--general">
+                        <section class="temas__principales--info--seccion">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <article>
+                                        <div class="temas__principales--info--seccion__a">
+                                            <h3 id="titulo-3">Ciudadanía Europea</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio
+                                                assumenda culpa
+                                                similique dignissimos dolor sunt soluta magnam autem corporis laborum
+                                                veniam, itaque,
+                                                iusto
+                                                quod
+                                                mollitia illum ipsum natus atque.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <div class="temas__principales--info--img">
+                                        <img src="./assets/img/mariachis.JPG" alt="imagen de mariachis" width="700vh">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </article>
-                </section>
-
-                <section class="temas__principales--info--seccion">
-                    <article>
-                        <div class="temas__principales--info--seccion__a">
-                            <h3 id="titulo-3">Ciudadanía Europea</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio assumenda culpa
-                                similique dignissimos dolor sunt soluta magnam autem corporis laborum veniam, itaque,
-                                iusto
-                                quod
-                                mollitia illum ipsum natus atque.</p>
-                        </div>
+                    <article class="temas__principales--info--general">
+                        <section class="temas__principales--info--seccion">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <div class="temas__principales--info--img">
+                                        <img src="./assets/img/tarraza.jpg" alt="imagen en la terraza de un edificio"
+                                            width="700vh">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <article>
+                                        <div class="temas__principales--info--seccion__a">
+                                            <h3 id="titulo-4">Obtené tu residencia</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quae,
+                                                saepe
+                                                voluptatem
+                                                vitae
+                                                inventore impedit odit deserunt. Voluptas excepturi, quidem, quod
+                                                eveniet
+                                                hic ratione
+                                                esse,
+                                                voluptatibus labore repellendus in culpa.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
                     </article>
-                    <div class="temas__principales--info--img">
-                        <img src="./assets/img/mariachis.JPG" alt="imagen de mariachis" width="700vh">
-                    </div>
-                </section>
-
-                <section class="temas__principales--info--seccion">
-                    <div class="temas__principales--info--img">
-                        <img src="./assets/img/tarraza.jpg" alt="imagen en la terraza de un edificio" width="700vh">
-                    </div>
-                    <article>
-                        <div class="temas__principales--info--seccion__a">
-                            <h3 id="titulo-4">Obtené tu residencia</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis quae, saepe voluptatem
-                                vitae
-                                inventore impedit odit deserunt. Voluptas excepturi, quidem, quod eveniet hic ratione
-                                esse,
-                                voluptatibus labore repellendus in culpa.</p>
-                        </div>
+                    <article class="temas__principales--info--general">
+                        <section class="temas__principales--info--seccion">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <article>
+                                        <div class="temas__principales--info--seccion__a">
+                                            <h3 id="titulo-5">Todo sobre tu mascota</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui
+                                                quisquam inventore
+                                                quis
+                                                repellendus sint aut saepe iusto illum provident expedita similique ex,
+                                                ab
+                                                veritatis
+                                                totam
+                                                dolore dolores laboriosam accusamus.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-xs-12">
+                                    <div class="temas__principales--info--img">
+                                        <img src="./assets/img/gulag-bebe.jpg"
+                                            alt="imagen de gato bebe con un peluche de ratón">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </article>
-                </section>
-
-                <section class="temas__principales--info--seccion">
-                    <article>
-                        <div class="temas__principales--info--seccion__a">
-                            <h3 id="titulo-5">Todo sobre tu mascota</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui quisquam inventore
-                                quis
-                                repellendus sint aut saepe iusto illum provident expedita similique ex, ab veritatis
-                                totam
-                                dolore dolores laboriosam accusamus.</p>
-                        </div>
-                    </article>
-                    <div class="temas__principales--info--img">
-                        <img src="./assets/img/gulag-bebe.jpg" alt="imagen de gato bebe con un peluche de ratón">
-                    </div>
-                </section>
-
-            </article>
-        </section>
+            </section>
     </main>
 
     <aside>
-        <section class="temas__secundarios">
-            <div class="temas__secundarios--contenedor">
-                <h4 class="temas__secundarios--title">¿Cómo es vivir en Copenhague?</h4>
-                <iframe class="temas__secundarios--video" width="360" height="215"
-                    src="https://www.youtube.com/embed/-Q8XvRX-3q8" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <section class="temas__secundarios">
+                        <div class="temas__secundarios--contenedor">
+                            <h4 class="temas__secundarios--title">¿Cómo es vivir en Copenhague?</h4>
+                            <iframe class="temas__secundarios--video" width="360" height="215"
+                                src="https://www.youtube.com/embed/-Q8XvRX-3q8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
+        </div>
     </aside>
 
     <footer>
         <section class="pie__pagina">
-            <article class="pie__pagina--contenedor">
-                <nav>
-                    <ul class="pie__pagina--menu__footer">
-                        <li><a href="./index.html"><img src="./assets/icons/logo-avion.png" alt="logo" width="42vw">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <article class="pie__pagina--contenedor">
+                            <nav>
+                                <ul class="pie__pagina--menu__footer">
+                                    <li><a href="./index.html"><img src="./assets/icons/logo-avion.png" alt="logo"
+                                                width="42vw">
 
-                            </a></li>
-                        <li><a href="./pages/section1.html"><img src="./assets/icons/grupo.png"
-                                    alt="icono sobre nosotros" width="25vw"> Sobre nosotros >> </a></li>
-                        <li><a href="./pages/section2.html"><img src="./assets/icons/galeria.png" alt="icono de galeria"
-                                    width="25vw"> Galería >> </a></li>
-                        <li><a href="./pages/section3.html"><img src="./assets/icons/equipo.png" alt="icono grupo"
-                                    width="25vw"> ¿Cómo empezar? >> </a></li>
-                        <li><a href="./pages/section4.html"><img src="./assets/icons/atencion-al-cliente.png"
-                                    alt="icono contacto" width="25vw"> Contacto</a></li>
-                    </ul>
-                </nav>
-            </article>
-
-            <article>
-                <p class="pie__pagina--eslogan__a">"Esta es una empresa que no para de soñar, queremos ayudarte a que
-                    veas
-                    que todo es posible"</p>
-                <p class="pie__pagina--eslogan__b">PODES LLEGAR TAN ALTO COMO VEAN TUS OJOS</p>
-            </article>
-
-            <article class="pie__pagina--logo__avion">
-                <img src="./assets/icons/avion-gif.gif" alt="avion tipo gif" width="200vw">
-                <div class="pie__pagina--logo__cartel">
-                    <img src="./assets/icons/logo luminoso.gif" alt="logo luminoso" width="400vw">
+                                        </a></li>
+                                    <li><a href="./pages/section1.html"><img src="./assets/icons/grupo.png"
+                                                alt="icono sobre nosotros" width="25vw"> Sobre nosotros >> </a></li>
+                                    <li><a href="./pages/section2.html"><img src="./assets/icons/galeria.png"
+                                                alt="icono de galeria" width="25vw"> Galería >> </a></li>
+                                    <li><a href="./pages/section3.html"><img src="./assets/icons/equipo.png"
+                                                alt="icono grupo" width="25vw"> ¿Cómo empezar? >> </a></li>
+                                    <li><a href="./pages/section4.html"><img
+                                                src="./assets/icons/atencion-al-cliente.png" alt="icono contacto"
+                                                width="25vw"> Contacto</a></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
                 </div>
-            </article>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <article>
+                            <p class="pie__pagina--eslogan__a">"Esta es una empresa que no para de soñar, queremos
+                                ayudarte a que
+                                veas
+                                que todo es posible"</p>
+                            <p class="pie__pagina--eslogan__b">PODES LLEGAR TAN ALTO COMO VEAN TUS OJOS</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <article class="pie__pagina--logo__avion">
+                            <img src="./assets/icons/avion-gif.gif" alt="avion tipo gif" width="200vw">
+                            <div class="pie__pagina--logo__cartel">
+                                <img src="./assets/icons/logo luminoso.gif" alt="logo luminoso" width="400vw">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Pie de página: liks footer(redes sociales) -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12">
 
-            <article class="pie__pagina--redes__sociales">
-                <a href="https://www.instagram.com/viajecitook/"> <img src="./assets/icons/insta-blanco.png"
-                        alt="logo instagram" width="22vw"></a>
-                <a href="https://www.tiktok.com/@viajecitook?lang=es"><img src="./assets/icons/tiktok-blanco.png"
-                        alt="logo tik-tok" width="22vw"></a>
-                <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
-                        src="./assets/icons/you-tube-blanco.png" alt="logo you tube" width="22vw"></a>
-                <a href="./pages/section4.html#datos"><img src="./assets/icons/llamada-blanco.png"
-                        alt="logo de contacto" width="22vw"></a>
-                <img src="./assets/icons/idioma-blanco.png" alt="logo de idioma" width="22vw">
-                <!--Agregar inglés-->
-            </article>
+                            <section class="pie__pagina">
+                                <article class="pie__pagina--redes__sociales">
+                                    <a href="https://www.instagram.com/viajecitook/"> <img
+                                            src="./assets/icons/insta-blanco.png" alt="logo instagram" width="22vw"></a>
+                                    <a href="https://www.tiktok.com/@viajecitook?lang=es"><img
+                                            src="./assets/icons/tiktok-blanco.png" alt="logo tik-tok" width="22vw"></a>
+                                    <a href="https://www.youtube.com/channel/UCEBaHtMGohHr2McGyh2fQTw"><img
+                                            src="./assets/icons/you-tube-blanco.png" alt="logo you tube"
+                                            width="22vw"></a>
+                                    <a href="./section4.html#datos"><img src="./assets/icons/llamada-blanco.png"
+                                            alt="logo de contacto" width="22vw"></a>
+                                    <img src="./assets/icons/idioma-blanco.png" alt="logo de idioma" width="22vw">
+                                    <!--Agregar inglés-->
+                                </article>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
         </section>
     </footer>
 
-    <!-- <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-    -->
     <script src="./pages/bootstrap.bundle.min.js"></script>
 </body>
 

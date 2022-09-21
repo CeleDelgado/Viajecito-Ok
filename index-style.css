@@ -55,10 +55,14 @@ li {
 .nav-link {
 	color: rgb(255, 255, 255);
 }
+.dropdown-item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .encabezado__submenu {
 	background-color: rgba(26, 26, 26, 0.527);
 	color: rgb(255, 255, 255);
-	
+
 }
 .nav-link {
 	color: rgb(255, 255, 255);
@@ -68,7 +72,7 @@ li {
 	width: 50%;
 	margin-left: 26%;
 }
-/*hover del submenu*/
+/*hover del submenu, corregir porque aparecen dos hover superpuestos*/
 .dropdown-item:focus {
 	background-color: rgba(255, 0, 0, 0.39);
     border: 1px rgb(255, 0, 0) solid;
@@ -88,7 +92,7 @@ li {
 	color: rgb(255, 255, 255);
 	padding: 10px;
     border-radius: 10px;
-} 
+}
 .navbar a:focus {
 	background-color: rgba(255, 0, 0, 0.39);
     border: 1px rgb(255, 0, 0) solid;
@@ -106,12 +110,14 @@ li {
 
 /****************************************************************************/
 
-/***MAIN***/
+/***MAIN-INDEX***/
 .temas__principales {
     background-image: url(assets/img/fondo-pantalla-a.png);
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 20%;
 }
+
 /**************************************************************************/
 
 /********Slider***************/
@@ -151,8 +157,7 @@ li {
     100% {
         opacity: 1;
     }
-}  
-
+}
 
 .container__slider{
     max-width: 1000px;
@@ -202,6 +207,7 @@ li {
     margin: auto;
     cursor: pointer;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --bs-card-bg: none;
 }
 .temas__principales--slider img{
     width: 100%;
@@ -235,11 +241,11 @@ li {
 .temas__principales--info--seccion {
     /* display: flex;
     flex-direction: column; */
-    margin: 120px 30px 0px 30px;
+    margin: 60px 30px 0px 30px;
     padding: 10px 5px;
     align-items: center;
     justify-content: center;
-    top: 80%;
+    top: 40%;
     background-color: rgb(255, 255, 255);
 }
 /* slide-in-elliptic-top-fwd */
@@ -283,6 +289,7 @@ li {
 .temas__principales--info--seccion__a {
     display: flex;
     flex-direction: column;
+    
 }
 .temas__principales--info--seccion__a h3 {
     padding: 10px;
@@ -308,7 +315,7 @@ li {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 .portada h1 {
@@ -348,7 +355,7 @@ li {
     padding: 5px;
     margin: 100px 0px 30px 0px;
     border: 1.5px black solid;
-    position: relative; 
+    position: relative;
     margin-top: 45vh;
     margin-left: 19vh;
     background-color: rgb(255, 255, 255);
@@ -368,14 +375,14 @@ li {
     display: flex;
 }
 .container__b--info--a {
-    margin: 10vh 3vh;
-    padding: 40px 10px;
+    margin: 10vh 1vh;
+    padding: 40px 1px;
     background-color:  rgba(255, 0, 0, 0.37);
     color: rgb(255, 255, 255);
 }
 .container__b--info--b {
-    margin: 10vh 3vh;
-    padding: 40px 10px;
+    margin: 10vh 1vh;
+    padding: 40px 1px;
     background-color:  rgba(214, 138, 16, 0.397);
     color: rgb(255, 255, 255);
 }
@@ -410,14 +417,13 @@ li {
 }
 .link__paises--contenedor__menu {
     background-color:  rgba(54, 58, 58, 0.384);
-    top: 8vh;
     width: 100vw;
-    height: 5vh;
     position: fixed;
     font-size: .8rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
 }
 .link__paises--contenedor__menu li a:active {
     background-color: rgba(255, 255, 255, 0.295);
@@ -455,6 +461,7 @@ li {
 	height:30rem;
 	max-width: 100%;
 	position: relative;
+    margin-top: -16%;
 }
 .article__pais--contenedor__title{
 	color:#fff;
@@ -570,7 +577,7 @@ li {
     justify-content: center;
     top: 80%;
     background-color: rgb(255, 255, 255);
-} 
+}
 .article__a h2 {
     padding: 20px;
     margin: 15px;
@@ -671,7 +678,7 @@ li {
 }
 
 /*********Main: Contacto****************/
-.container {
+.temas-principales-section4 .container {
     flex-direction: column;
     margin-top: 115vh;
 }
@@ -701,7 +708,7 @@ li {
     background-color: rgba(0, 0, 0, 0.438);
     border-radius: 20px;
     font-size: 2.2rem;
-    
+
 }
 /*formularios*/
 /*MOBILE FIRST: programa una entrevista...*/
@@ -732,7 +739,7 @@ li {
     .formulario__entrevista__container--botons {
         display: flex;
         flex-direction: row;
-    } 
+    }
     .boton {
         color: rgb(255, 255, 255);
         background-color: rgb(255, 0, 0);
@@ -745,7 +752,7 @@ li {
         font-size: 1rem;
         margin: 25px 5px 25px 5px;
         font-size: 1rem;
-        
+
     }
     .formulario__entrevista__container--botons input:focus {
         background-color: rgb(255, 255, 255);
@@ -802,7 +809,7 @@ li {
     background-color: rgb(255, 255, 255);
     color: red;
     border: 2px red solid;
-} 
+}
 /*revisar porque no funciona la caricatura del form:comentario */
 .img__form--com {
     margin-top: 10vh;
@@ -836,7 +843,7 @@ li {
 .temas__secundarios {
     background-image: url(assets/img/fondo-pantalla-b.png);
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     width: 100%;
     height: 70vh;
     justify-content: center;
@@ -887,6 +894,7 @@ li {
     justify-content: flex-start;
     align-items: center;
     height: 8vh;
+    margin: 0%;
 }
 .pie__pagina--menu__footer a {
     text-decoration: none;
@@ -902,6 +910,7 @@ li {
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0%;
 }
 .pie__pagina--eslogan__b {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -960,7 +969,7 @@ li {
     align-items: center;
 }
 .pie__pagina--redes__sociales a:focus {
-    
+
 }
 /***************Diseño Responsive***************/
 
@@ -968,6 +977,9 @@ li {
 
 /*****Estructura del Index: vista Tablet*****/
 @media (min-width:768px) {
+    .container {
+        margin-top: 0vh;
+    }
     .container__slider {
         padding: 30px 60px;
     }
@@ -977,6 +989,13 @@ li {
     .temas__principales--info--seccion {
         display: flex;
         flex-direction: row;
+    }
+    .temas__principales--info--seccion__a {
+        margin-left: 80%;
+    }
+    .temas__principales--info--seccion__a .titulo-2 h3 p {
+        margin-left: 0%;
+        text-align: center;
     }
     .temas__principales--info--img {
         width: 200vh;
@@ -1032,7 +1051,7 @@ li {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,auto);
         grid-gap: 5px;
-        grid-template-areas: 
+        grid-template-areas:
         "article__pais--img";
         margin: 5px;
         justify-content: center;
@@ -1043,7 +1062,7 @@ li {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    } 
+    }
     img:nth-child(3) {
         grid-column: 1/3;
     }
@@ -1081,32 +1100,13 @@ li {
 
 /*****Estructura del Section-4: vista Tablet. CONTACTO*****/
 @media (min-width:768px) {
-    /*.navbar {
-        height: 5.8vh;
-    }
-    
-    .encabezado__menu a {
-        font-size: .9rem;
-    }
-    .encabezado__menu img {
-        margin-top: 5px;
-    } borrar, no es necesario*/
-    /* .main-contacto {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "encabezado "
-        "main-contacto"
-        "footer ";
-    }*/
+
     .temas-principales-section4 {
         padding-bottom: 80vh;
     }
-    .container {
+    /* .container {
         margin-top: 90vh;
-    }
+    } */
     .row .formulario__entrevista {
         width: 100%;
         margin-left: 10%;
@@ -1122,7 +1122,7 @@ li {
     .formulario__comentarios {
         display: flex;
         flex-direction: row;
-    } 
+    }
     .row .formulario__comentarios {
         width: 100%;
         margin-left: 10vh;
@@ -1138,6 +1138,10 @@ li {
     }
     .pie__pagina--redes__sociales {
         height: 5.5vh;
+    }
+    .temas__principales--info--general img {
+        width: 20%;
+        margin-left: 4%;
     }
 }
 /*****Estructura del Index: vista Deskyop.*****/
@@ -1158,7 +1162,6 @@ li {
     .pie__pagina--menu__footer {
         height: 8vh;
     }
-    
     .encabezado__menu li a:hover {
         background-color: rgba(255, 0, 0, 0.295);
         padding: 15px;
@@ -1252,7 +1255,7 @@ li {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(2,auto);
         grid-gap: 10px;
-        grid-template-areas: 
+        grid-template-areas:
         "article__pais--img";
         margin: 5px;
         justify-content: center;
@@ -1278,7 +1281,7 @@ li {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
+        grid-template-areas:
         "encabezado "
         "main__como-empezar"
         "footer ";
@@ -1335,7 +1338,7 @@ li {
 		color: rgb(255, 255, 255);
 		padding: 10px;
 		border-radius: 10px;
-	} 
+	}
 	.navbar a:hover {
 		background-color: rgba(255, 0, 0, 0.39);
 		border: 1px rgb(255, 0, 0) solid;
@@ -1366,9 +1369,9 @@ li {
     .temas-principales-section4 {
         padding-bottom: 130vh;
     }
-    .container {
+    /* .container {
         margin-top: 130vh;
-    }
+    } */
     .row .formulario__entrevista {
         width: 180%;
         margin-left: 10%;
@@ -1390,7 +1393,7 @@ li {
     .formulario__comentarios {
         display: flex;
         flex-direction: row;
-    } 
+    }
     .row .formulario__comentarios {
         width: 150%;
         margin-left: 10vh;
