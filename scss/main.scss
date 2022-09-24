@@ -1,0 +1,43 @@
+/*para hacer funcionar sass
+
+sass (ruta:) scss/main.scss css/style.css
+*/
+h1 {
+    color: red;
+}
+/*cada vez que compile con sass en mi archivo de css quedara guardado lo quee declare en mi main.scss
+para no hacer ese procecdimiento a cada rato, vamos a escribir:
+sass --watch scss/main.css css/styles.css
+
+con esto digo sas mira este archivo y cadaa vez que haya cambios copialos en mi archivo css, va a estar observando y si hay cambios los va a copiar a la ruta de la carpeta de css, con control c le digo que no compile mas
+
+*/
+h2 {
+    background-color: antiquewhite;
+}
+nav {
+    ul {
+        list-style: none;
+        li{
+            padding: 15px;
+            display: inline-block;
+            a{
+                text-decoration: none;
+                color: palegreen;
+            }
+        }
+    }
+}
+
+.tarjeta {
+    width: 300px;
+    &__img{
+        width: 100%;
+    }
+}
+.btn {
+    padding: 10px;
+    &:hover {
+        color: aquamarine;
+    }
+}

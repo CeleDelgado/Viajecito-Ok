@@ -595,8 +595,8 @@ li {
 }
 .b {
     flex-direction: column;
-    margin: 50px 75px 0px 75px;
-    padding: 10px 20px;
+    margin: 50px 25px 0px 25px;
+    padding: 10px 40px;
     align-items: center;
     justify-content: center;
     top: 50%;
@@ -616,8 +616,8 @@ li {
 }
 .c {
     flex-direction: column;
-    margin: 50px 75px 0px 75px;
-    padding: 10px 20px;
+    margin: 50px 25px 0px 25px;
+    padding: 10px 40px;
     align-items: center;
     justify-content: center;
     top: 80%;
@@ -638,7 +638,7 @@ li {
 .article__d {
     display: flex;
     flex-direction: column;
-    margin: 20px 30px;
+    margin: 20px 0px;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.616);
 }
@@ -986,19 +986,22 @@ li {
     .title {
         padding: 12vh 5vh 1vh 5vh
     }
+
     .temas__principales--info--seccion {
         display: flex;
         flex-direction: row;
-    }
-    .temas__principales--info--seccion__a {
-        margin-left: 80%;
     }
     .temas__principales--info--seccion__a .titulo-2 h3 p {
         margin-left: 0%;
         text-align: center;
     }
-    .temas__principales--info--img {
-        width: 200vh;
+    .temas__principales--info--general img {
+        width: 200%;
+        margin-left: 0%;
+    }
+    .temas__principales--info--general .imagen__pies {
+        width: 45%;
+        margin: 2px auto; 
     }
     .temas__secundarios {
         height: 60vh;
@@ -1022,29 +1025,35 @@ li {
     .container__a {
         flex-direction: row;
     }
+    .container__b {
+        display: flex;
+        justify-content: center;
+    }
     .container__c {
         flex-direction: row;
     }
-    /***/
+    
 }
 /*****Estructura del Section-2: vista Tablet. Galería*****/
 @media (min-width:768px){
-    .link__paises--contenedor__menu {
-        top: 5.8vh;
-    }
     .img-noruega {
-        top: 3.5vh;
+        top: 9.1vh;
     }
     .link__paises--contenedor__menu {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        top: 4.67vh;
+        height: 6vh;
     }
     .link__paises--menu li {
         padding: 3px 25px;
     }
     .article__pais--contenedor__title {
         margin-left: 20vh;
+    }
+    .article__pais--info {
+        margin: 20vh 8vh;
     }
     .article__pais--img {
         display: grid;
@@ -1056,11 +1065,12 @@ li {
         margin: 5px;
         justify-content: center;
         align-items: center;
-        margin: 3px 10vh;
+    }
+    .article__pais--location {
+        padding-bottom: 15vh;
     }
     .article__pais--img img{
         width: 100%;
-        height: 100%;
         object-fit: cover;
     }
     img:nth-child(3) {
@@ -1080,13 +1090,19 @@ li {
     }
     .article__a {
         padding: 30px 85px;
-        margin: 0px 45px 99px 45px;
+        margin: 0px 10% 99px 25%;
     }
     .article__b--c {
         padding: 40px;
+        display: flex;
+        flex-direction: row;
+        margin: 5px 10%;
     }
     .article__d {
-        margin: 30px;
+        margin: 30px 10px;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
     }
     .article__d--info h2 {
         font-size: 1.5rem;
@@ -1094,7 +1110,8 @@ li {
     }
     .article__d--table {
         justify-content: center;
-        padding: 30px;
+        padding: 5px;
+        margin: 10px 5px;
     }
 }
 
@@ -1139,10 +1156,10 @@ li {
     .pie__pagina--redes__sociales {
         height: 5.5vh;
     }
-    .temas__principales--info--general img {
+    /* .temas__principales--info--general img {
         width: 20%;
         margin-left: 4%;
-    }
+    } */
 }
 /*****Estructura del Index: vista Deskyop.*****/
 @media (min-width:1200px) {
@@ -1158,6 +1175,10 @@ li {
     }
     .temas__secundarios {
         height: 90vh
+    }
+    .temas__principales--info--general .imagen__pies {
+        width: 80%;
+        margin: 2px auto; 
     }
     .pie__pagina--menu__footer {
         height: 8vh;
@@ -1226,10 +1247,10 @@ li {
         height: 8vh;
     }
     .img-noruega {
-        top: 8vh;
+        top: 27vh;
     }
     .link__paises--contenedor__menu {
-        top: 8vh;
+        top: 11vh;
         height: 10.8vh;
         display: flex;
         justify-content: space-evenly;
@@ -1250,9 +1271,12 @@ li {
     .article__pais--info {
         margin-left: 20vh;
     }
+    .article__pais--location {
+        padding-bottom: 20%;
+    }
     .article__pais--img {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(2,auto);
         grid-gap: 10px;
         grid-template-areas:
@@ -1260,11 +1284,11 @@ li {
         margin: 5px;
         justify-content: center;
         align-items: center;
-        margin: 3px 10vh;
+        margin: 3px 15vh;
     }
     .article__pais--img img{
-        width: 100%;
-        height: 100%;
+        width: 200%;
+        /* height: 50%; */
         object-fit: cover;
     }
     .link__paises--contenedor__menu li a:hover {
@@ -1297,7 +1321,7 @@ li {
     }
     .article__a {
         padding: 30px 85px;
-        margin: 30vh 40vh;
+        margin: 30vh 15% 20px 35%;
     }
     .article__b--c {
         padding: 70px;
@@ -1422,3 +1446,5 @@ li {
         height: 8vh;
     }
 }
+
+/* ------------------------------- */
