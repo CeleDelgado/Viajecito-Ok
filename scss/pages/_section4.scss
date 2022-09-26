@@ -1,0 +1,124 @@
+/*********Main: Contacto****************/
+.temas-principales-section4 .container {
+    flex-direction: column;
+    margin-top: 115vh;
+}
+.temas-principales-section4 {
+    background-image: url(assets/img/fondo-pantalla-f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 115vh;
+}
+.portada__section4 {
+    background-image: url(assets/img/viejito.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    display: flex;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(194, 193, 193);
+}
+.portada__section4 h1 {
+    padding: 2px 20px;
+    margin: 92vh 10px 10px 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    font-size: 2.2rem;
+
+}
+
+.datos-contacto {
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    background-color: rgba(216, 211, 211, 0.774);
+    border-radius: 100px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.datos {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.datos__links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/*****Estructura del Section-4: vista Tablet. CONTACTO*****/
+@media (min-width:768px) {
+
+    .temas-principales-section4 {
+        padding-bottom: 80vh;
+    }
+    /* .container {
+        margin-top: 90vh;
+    } */
+    .row .formulario__entrevista {
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .formulario__entrevista__container--botons {
+        margin-left: 8%;
+    }
+    .boton {
+        padding: 15px;
+        margin: 25px 15px 25px 15px;
+    }
+    .formulario__comentarios {
+        display: flex;
+        flex-direction: row;
+    }
+    .row .formulario__comentarios {
+        width: 100%;
+        margin-left: 10vh;
+    }
+    .img__form--com {
+        width: 80%;
+        border-radius: 20px;
+        margin-top: 85%;
+    }
+    .datos-contacto {
+        padding: 35px 55px;
+        margin-bottom: 0%;
+    }
+    .pie__pagina--redes__sociales {
+        height: 5.5vh;
+    }
+}
+
+/*****Estructura del Section-4: vista Deskyop. CONTACTO*****/
+@media (min-width:1200px) {
+
+    /*main--section4*/
+    .temas-principales-section4 {
+        padding-bottom: 130vh;
+    }
+
+    .datos-contacto {
+        padding: 35px 75px;
+        margin-bottom: 0%;
+        width: 150%;
+    }
+    .pie__pagina--redes__sociales {
+        height: 5.5vh;
+    }
+    .datos__links a:hover {
+        background-color: rgba(240, 248, 255, 0.582);
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px white solid;
+    }
+    .pie__pagina--redes__sociales {
+        height: 8vh;
+    }
+}

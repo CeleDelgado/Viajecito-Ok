@@ -1,3 +1,197 @@
 /*
 Contiene los estilos específicos para determinadas vistas (páginas) de nuestro proyecto como puede ser la página de inicio o la de contacto.
 */
+
+
+/***MAIN-INDEX***/
+
+.temas__principales {
+    background-image: url(assets/img/fondo-pantalla-a.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20%;
+}
+
+.temas__principales--info--seccion {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 60px 30px 0px 30px;
+    padding: 10px 5px;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    background-color: rgb(255, 255, 255);
+}
+/* slide-in-elliptic-top-fwd */
+.temas__principales--info--seccion {
+	-webkit-animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes temas__principales--info--seccion {
+    0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+    }
+}
+@keyframes temas__principales--info--seccion {
+    0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+    }
+    100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+    }
+}
+
+.temas__principales--info--seccion__a {
+    display: flex;
+    flex-direction: column;
+    
+}
+.temas__principales--info--seccion__a h3 {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.temas__principales--info--seccion__a p {
+    text-align: justify;
+    padding: 5px;
+    margin: 10px 20px;
+}
+.temas__principales--info--seccion img {
+    border: 1.5px black solid;
+    padding: 5px;
+}
+
+/***********ASIDE******************/
+
+.temas__secundarios {
+        background-image: url(assets/img/fondo-pantalla-b.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .temas__secundarios--contenedor {
+        border: .2rem black solid;
+        padding: 10px 15px;
+        margin: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.658);
+    }
+    .temas__secundarios--title {
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .temas__secundarios--video {
+        display: flex;
+    }
+
+    /***************Diseño Responsive***************/
+
+
+/*****Estructura del Index: vista Tablet*****/
+@media (min-width:768px) {
+    .container {
+        margin-top: 0vh;
+    }
+    .container__slider {
+        padding: 30px 60px;
+    }
+    .title {
+        padding: 12vh 5vh 1vh 5vh
+    }
+
+    .temas__principales--info--seccion {
+        display: flex;
+        flex-direction: row;
+    }
+    .temas__principales--info--seccion__a .titulo-2 h3 p {
+        margin-left: 0%;
+        text-align: center;
+    }
+    .temas__principales--info--general img {
+        width: 200%;
+        margin-left: 0%;
+    }
+    .temas__principales--info--general .imagen__pies {
+        width: 45%;
+        margin: 2px auto; 
+    }
+    .temas__secundarios {
+        height: 60vh;
+    }
+    .pie__pagina--menu__footer{
+        height: 8vh;
+        padding: 1px 25px;
+    }
+}
+/*****Estructura del Index: vista Desktop.*****/
+@media (min-width:1200px) {
+    .title {
+        padding: 18vh 5vh 8vh 5vh;
+        font-size: 2.5rem;
+    }
+    .container__slider {
+        padding: 10px 5px;
+    }
+    .temas__principales--info--seccion {
+        margin: 20vh 20vh 0vh 20vh;
+    }
+    .temas__secundarios {
+        height: 90vh
+    }
+    .temas__principales--info--general .imagen__pies {
+        width: 80%;
+        margin: 2px auto; 
+    }
+    .pie__pagina--menu__footer {
+        height: 8vh;
+    }
+    .encabezado__menu li a:hover {
+        background-color: rgba(255, 0, 0, 0.295);
+        padding: 15px;
+        border-radius: 13px;
+        border: 1px red solid;
+    }
+
+    .pie__pagina--menu__footer li a:hover {
+        background-color: rgba(255, 195, 65, 0.644);
+        padding: 20px 10px 10px 10px;
+        border-radius: 15px;
+        border: 1px rgb(255, 102, 0) solid;
+    }
+    .pie__pagina--redes__sociales a:hover {
+        background-color: rgba(255, 0, 0, 0.295);
+        padding: 10px 20px;
+        border-radius: 13px;
+        border: 1px red solid;
+    }
+}

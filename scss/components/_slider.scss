@@ -1,0 +1,120 @@
+/*
+components . Contiene los estilos de los distintos componentes que emplearemos dentro de nuestra aplicación como pueden ser botones, jumbos, sliders, carruseles… Separar cada componente en su propio archivo nos permitirá reutilizarlos en otros proyectos.
+*/
+
+/********Slider DEL INDEX***************/
+.title{
+    text-align: center;
+    padding: 12vh 5vh 0vh 5vh;
+    margin: 0px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+/* tracking-in-expand */
+.title {
+	-webkit-animation: title 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: title 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes title {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes title {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container__slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+}
+.temas__principales--slider input[type=radio]{
+    display: none;
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cards a {
+    color: rgb(255, 255, 255);
+    background-color: rgba(107, 107, 107, 0.582);
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    font-size: 1rem;
+}
+.card{
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --bs-card-bg: none;
+}
+.temas__principales--slider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3 {
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}

@@ -1,0 +1,144 @@
+/*form: PROGRAMA UNA ENTREVISTA*/
+
+.row .formulario__entrevista {
+    width: 80%;
+    border: 2.5px black solid;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #757575;
+    padding: 10px;
+    border-radius: 10px;
+}
+.formulario__entrevista--title {
+    text-align: center;
+    color: #FFFFFF;
+    background: #b8b8b8;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    color: #FFFFFF;
+    box-shadow: #3535353b;
+    padding: 10px 5px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.input-group {
+    padding: 10px 0px;
+}
+.formulario__entrevista__container--botons {
+    display: flex;
+    flex-direction: row;
+}
+.boton {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+    padding: 15px 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    font-size: 1rem;
+    margin: 25px 5px 25px 5px;
+    font-size: 1rem;
+
+}
+.formulario__entrevista__container--botons input:focus {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1.5px red solid;
+    color: rgb(255, 0, 0);
+}
+
+
+
+/*form: COMENTARIOS*/
+.row .formulario__comentarios {
+width: 70%;
+height: 50%;
+border: 1px black solid;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+top: 5px;
+background-color: #050505a4;
+padding: 10px;
+border-radius: 10px;
+margin-top: 10vh;
+color: rgb(216, 216, 216);
+}
+.formulario__comentarios--title {
+text-align: center;
+color: #FFFFFF;
+background: #333333;
+text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+color: #FFFFFF;
+background: #00000059;
+padding: 20px;
+border-radius: 10px;
+font-size: 1.5rem;
+}
+.formulario__comentarios p {
+text-align: center;
+}
+.formulario__comentario--boton {
+color: rgb(255, 255, 255);
+background-color: rgb(255, 0, 0);
+border-radius: 15px;
+padding: 15px 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 10px 10vh;
+font-size: 1.1rem;
+margin-left: auto;
+margin-right: auto;
+}
+.formulario__comentario--boton:focus {
+border-radius: 15px;
+background-color: rgb(255, 255, 255);
+color: red;
+border: 2px red solid;
+}
+.img__form--com {
+    margin-top: 10vh;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 30px;
+}
+/*****Estructura del Section-4: vista Deskyop. CONTACTO*****/
+@media (min-width:1200px) {
+
+    .row .formulario__entrevista {
+        width: 180%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .formulario__entrevista__container--botons {
+        margin-left: 15%;
+    }
+    .formulario__entrevista__container--botons input:hover {
+        background-color: #ffffffad;
+        color: #ff0000;
+        font-size: 1.1rem;
+        border: 1.2px rgb(255, 0, 0) solid;
+    }
+    .boton {
+        padding: 15px;
+        margin: 25px 35px 25px 35px;
+    }
+    .formulario__comentarios {
+        display: flex;
+        flex-direction: row;
+    }
+    .row .formulario__comentarios {
+        width: 150%;
+        margin-left: 10vh;
+    }
+    .img__form--com {
+        width: 80%;
+        border-radius: 20px;
+        margin-top: 40%;
+        margin-left: 80%;
+    }
+}

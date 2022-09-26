@@ -120,7 +120,7 @@ li {
 
 /**************************************************************************/
 
-/********Slider***************/
+/********Slider DEL INDEX***************/
 .title{
     text-align: center;
     padding: 12vh 5vh 0vh 5vh;
@@ -307,7 +307,7 @@ li {
     padding: 5px;
 }
 
-/*******Main: Sobre nosotros**********/
+/******* Sobre nosotros**********/
 .portada {
     height: 24vh;
     background-image: url(assets/img/buseando.jpg);
@@ -408,7 +408,8 @@ li {
     margin: 5vh 2vh 10vh .5vh;
     background-color: rgb(255, 255, 255);
 }
-/*******Main: Galería***********/
+
+/******* Galería***********/
 
 .temas-principales-section2 {
     background-image: url(assets/img/fondo-pantalla-d.png);
@@ -710,8 +711,8 @@ li {
     font-size: 2.2rem;
 
 }
-/*formularios*/
-/*MOBILE FIRST: programa una entrevista...*/
+/*formulario PROGRAMA UNA ENTREVISTA*/
+
     .row .formulario__entrevista {
         width: 80%;
         border: 2.5px black solid;
@@ -810,7 +811,7 @@ li {
     color: red;
     border: 2px red solid;
 }
-/*revisar porque no funciona la caricatura del form:comentario */
+
 .img__form--com {
     margin-top: 10vh;
     margin-right: 30%;
@@ -969,8 +970,8 @@ li {
     align-items: center;
 }
 
-/***************Diseño Responsive***************/
 
+/***************Diseño Responsive***************/
 
 
 /*****Estructura del Index: vista Tablet*****/
@@ -1351,7 +1352,6 @@ li {
 		position: absolute;
 		top: 15%;
 		left: 22%;
-		/* para vista de tablet agregar que el left sea de 5% */
 		transform: translate(-50%, 0);
 	}
 	.collapse li a:hover {

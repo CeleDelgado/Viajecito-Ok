@@ -1,2 +1,22 @@
-@import "./abstracts/variables";
+/*ABSTRACTS
+@import "./abstracts/variables";*/
 
+/*BASE*/
+@import ".base/general";
+@import "./base/normalize";
+
+/*COMPONENTS*/
+@import "./components/parrallax";
+@import "./components/slider";
+
+/*LAYOUT*/
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/form";
+
+/*PAGES*/
+@import "./pages/index";
+@import "./pages/section1";
+@import "./pages/section2";
+@import "./pages/section3";
+@import "./pages/section4";

@@ -1,0 +1,139 @@
+
+/***HEADER***/
+
+/*detalles generales de personalizacion, centrando el nav, modificando colores, margenes, bordes*/
+.container-fluid {
+    padding: 0%;
+}
+.btn{
+	height: 60px;
+}
+.navbar-nav {
+	text-align: center;
+}
+.dropdown-item {
+	text-align: center;
+}
+.navbar-toggler{
+	margin-right: 30px;
+	background-color: rgb(168, 168, 168);
+	color: rgb(255, 255, 255);
+	border: 1.5px rgb(255, 255, 255) solid;
+}
+/*alineacion del logo principal en el centro de la pantalla para vista mobile y al principio para vista mas desktop o tablet, colores de funtes y colores de fondo del header*/
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+.navbar-brand {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.navbar {
+	background-color:  rgba(26, 26, 26, 0.801);
+}
+.nav-link {
+	color: rgb(255, 255, 255);
+}
+.dropdown-item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.encabezado__submenu {
+	background-color: rgba(26, 26, 26, 0.527);
+	color: rgb(255, 255, 255);
+
+}
+.nav-link {
+	color: rgb(255, 255, 255);
+}
+.dropdown-item {
+	color: rgb(255, 255, 255);
+	width: 50%;
+	margin-left: 26%;
+}
+/*hover del submenu, corregir porque aparecen dos hover superpuestos*/
+.dropdown-item:focus {
+	background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+	color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.dropdown-item:hover {
+	background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+	color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+/*iconos del menu principal*/
+.collapse li a:focus {
+	background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+    border-radius: 10px;
+}
+.navbar a:focus {
+	background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+	color: rgb(255, 255, 255);
+	padding: 3px 10px;
+    border-radius: 10px;
+}
+.navbar-toggler:focus {
+	background-color: rgba(255, 0, 0, 0.39);
+    border: 1px rgb(255, 0, 0) solid;
+	color: rgb(255, 255, 255);
+	padding: 8px 12px;
+    border-radius: 10px;
+}
+
+/***** vista Deskyop*****/
+@media (min-width:1200px) {
+
+    /*HEADER*/
+	.navbar-expand-lg .navbar-collapse{
+		justify-content: center;
+	}
+	.navbar-brand {
+		position: absolute;
+		top: 15%;
+		left: 22%;
+		transform: translate(-50%, 0);
+	}
+	.collapse li a:hover {
+		background-color: rgba(255, 0, 0, 0.39);
+		border: 1px rgb(255, 0, 0) solid;
+		color: rgb(255, 255, 255);
+		padding: 10px;
+		border-radius: 10px;
+	}
+	.navbar a:hover {
+		background-color: rgba(255, 0, 0, 0.39);
+		border: 1px rgb(255, 0, 0) solid;
+		color: rgb(255, 255, 255);
+		padding: 8px;
+		border-radius: 10px;
+	}
+	.navbar-toggler:hover {
+		background-color: rgba(255, 0, 0, 0.39);
+		border: 1px rgb(255, 0, 0) solid;
+		color: rgb(255, 255, 255);
+		padding: 8px 12px;
+		border-radius: 10px;
+	}
+	.dropdown-item {
+		color: rgb(255, 255, 255);
+		width: 100%;
+		margin: 1px;
+	}
+	.dropdown-item:hover {
+		background-color: rgba(255, 0, 0, 0.39);
+		border: 1px rgb(255, 0, 0) solid;
+		color: rgb(255, 255, 255);
+		border-radius: 10px;
+	}
+}

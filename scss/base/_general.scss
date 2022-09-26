@@ -1,0 +1,21 @@
+/*
+
+base . Contiene el código base de nuestro proyecto como es las reglas de tipografía (y fuentes adicionales) así como los resets necesarios para sobrescribir las reglas por defecto de los navegadores.
+
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+    /*Con box-sizing: border-box (una vez que reseteo el css) la medida de la caja sera:
+    el ancho (el width) menos el border, menos el padding
+    ancho de la caja= width - border- padding*/
+}
+ul,
+li {
+    text-decoration: none;
+    list-style: none;
+}

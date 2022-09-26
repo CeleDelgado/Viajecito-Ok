@@ -1,0 +1,163 @@
+/******* Sobre nosotros**********/
+.portada {
+    height: 24vh;
+    background-image: url(assets/img/buseando.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 20vh;
+}
+.temas-principales-section1 {
+    background-image: url(assets/img/fondo-pantalla-c.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.temas-principales-section1 h2 {
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+.container__a {
+    display: flex;
+    flex-direction: column;
+}
+.container__a--img--a {
+    margin: 10vh 0px 10vh 0px;
+    padding: 5px;
+    border: 1.5px black solid;
+    position: absolute;    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 40vh;
+    margin-left: 10px;
+}
+.container__a--img--b {
+    padding: 5px;
+    margin: 100px 0px 30px 0px;
+    border: 1.5px black solid;
+    position: relative;
+    margin-top: 45vh;
+    margin-left: 19vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 25vh;
+}
+.container__a--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 50px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.container__b {
+    display: flex;
+}
+.container__b--info--a {
+    margin: 10vh 1vh;
+    padding: 40px 1px;
+    background-color:  rgba(255, 0, 0, 0.37);
+    color: rgb(255, 255, 255);
+}
+.container__b--info--b {
+    margin: 10vh 1vh;
+    padding: 40px 1px;
+    background-color:  rgba(214, 138, 16, 0.397);
+    color: rgb(255, 255, 255);
+}
+.container__c {
+    display: flex;
+    flex-direction: column;
+}
+.container__c--info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px black solid;
+    margin: 10vh 5vh 10vh 5vh;
+    padding: 40px 20px;
+    width: 70vw;
+    background-color: rgb(255, 255, 255);
+}
+.container__c--img {
+    display: flex;
+    justify-content: center;
+    border: 2px black solid;
+    padding: 10px;
+    margin: 5vh 2vh 10vh .5vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/*****Estructura del Section-1: vista Tablet. Sobre Nosotros*****/
+@media (min-width:768px){
+    .portada {
+        background-size: contain;
+        height: 40.1vh;
+    }
+    .portada h1 {
+        margin-top: 35vh;
+        font-size: 1.5rem;
+        padding: 10px 70px;
+    }
+    .container__a {
+        flex-direction: row;
+    }
+    .container__b {
+        display: flex;
+        justify-content: center;
+    }
+    .container__c {
+        flex-direction: row;
+    }
+    
+}
+/*****Estructura del Section-1: vista Deskyop. Sobre Nosotros*****/
+@media (min-width:1200px) {
+    .portada {
+        background-size: cover;
+        height: 100vh;
+    }
+    .portada h1 {
+        margin-top: 40%;
+        padding: 20px 90px;
+        font-size: 2rem;
+    }
+    .container__a {
+        padding: 10vh 15vh;
+    }
+    .container__a--img--a {
+        width: 50vh;
+    }
+    .container__a--img--b {
+        width: 35vh;
+        margin-left: 30vh;
+        margin-top: 55vh;
+    }
+    .container__a--info {
+        margin: 20vh 10vh;
+    }
+    .container__b {
+        padding: 20vh;
+    }
+    .container__c {
+        padding: 10vh 20vh;
+    }
+    .container__c--info {
+        margin: 10vh 20vh 10vh 0vh;
+    }
+    .container__c--img {
+        width: 80vh;
+    }
+}

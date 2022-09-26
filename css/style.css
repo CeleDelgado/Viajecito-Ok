@@ -1,0 +1,53 @@
+/***HEADER***/
+/*detalles generales de personalizacion, centrando el nav, modificando colores, margenes, bordes*/
+.container-fluid {
+  padding: 0%;
+}
+
+.btn {
+  height: 60px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.navbar-toggler {
+  margin-right: 30px;
+  background-color: rgb(168, 168, 168);
+  color: rgb(255, 255, 255);
+  border: 1.5px rgb(255, 255, 255) solid;
+}
+
+/*alineacion del logo principal en el centro de la pantalla para vista mobile y al principio para vista mas desktop o tablet, colores de funtes y colores de fondo del header*/
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.navbar {
+  background-color: rgba(26, 26, 26, 0.801);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
