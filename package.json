@@ -3,3 +3,19 @@
     "bootstrap": "^5.2.1"
   }
 }
+
+{
+  "keywords": [],
+  "name": "viajecito-ok",
+  "version": "MAJOR.MINOR.PATCH",
+  "dependencies": "bootstrap: ^5.2.1",
+  "repository": {
+    "type”: "git",
+    "url": "https://celedelgado.github.io/Viajecito-Ok/"
+  },
+  "author": "Celeste Delgado",
+  "license": "MIT",
+}
+
+
+
