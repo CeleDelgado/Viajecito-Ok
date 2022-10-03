@@ -2,6 +2,7 @@
 layout . En esta carpeta aparecen los estilos relacionados con la estructura de nuestra página web, como por ejemplo el sistema de grid que estemos empleando así como los estilos de la cabecera, el footer…
 */
 
+/*FOOTER*/
 
 .pie__pagina--menu__footer li a:focus {
     background-color: rgba(255, 195, 65, 0.644);
@@ -28,13 +29,15 @@ layout . En esta carpeta aparecen los estilos relacionados con la estructura de 
     align-items: center;
     height: 8vh;
     margin: 0%;
+
+    a {
+        text-decoration: none;
+        font-size: .8rem;
+        padding: 1px 10px;
+        color: rgb(0, 0, 0);
+    }
 }
-.pie__pagina--menu__footer a {
-    text-decoration: none;
-    font-size: .8rem;
-    padding: 1px 10px;
-    color: rgb(0, 0, 0);
-}
+
 .pie__pagina--eslogan__a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;

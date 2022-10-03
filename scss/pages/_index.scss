@@ -10,18 +10,37 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 20%;
+    &--info--seccion {
+        margin: 60px 30px 0px 30px;
+        padding: 10px 5px;
+        align-items: center;
+        justify-content: center;
+        top: 40%;
+        background-color: rgb(255, 255, 255);
+    }
+    &--info--seccion__a {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        p {
+            text-align: justify;
+            padding: 5px;
+            margin: 10px 20px;
+        }
+        img {
+            border: 1.5px black solid;
+            padding: 5px;
+        }
+
+    }
 }
 
-.temas__principales--info--seccion {
-    /* display: flex;
-    flex-direction: column; */
-    margin: 60px 30px 0px 30px;
-    padding: 10px 5px;
-    align-items: center;
-    justify-content: center;
-    top: 40%;
-    background-color: rgb(255, 255, 255);
-}
 /* slide-in-elliptic-top-fwd */
 .temas__principales--info--seccion {
 	-webkit-animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -60,27 +79,6 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     }
 }
 
-.temas__principales--info--seccion__a {
-    display: flex;
-    flex-direction: column;
-    
-}
-.temas__principales--info--seccion__a h3 {
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-.temas__principales--info--seccion__a p {
-    text-align: justify;
-    padding: 5px;
-    margin: 10px 20px;
-}
-.temas__principales--info--seccion img {
-    border: 1.5px black solid;
-    padding: 5px;
-}
-
 /***********ASIDE******************/
 
 .temas__secundarios {
@@ -92,59 +90,75 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
         justify-content: center;
         align-items: center;
         display: flex;
-    }
-    .temas__secundarios--contenedor {
-        border: .2rem black solid;
-        padding: 10px 15px;
-        margin: 50px 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.658);
-    }
-    .temas__secundarios--title {
-        padding: 10px;
-        color: rgb(0, 0, 0);
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    .temas__secundarios--video {
-        display: flex;
+        &--contenedor {
+            border: .2rem black solid;
+            padding: 10px 15px;
+            margin: 50px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.658);
+        }
+        &--title {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &--video {
+            display: flex;
+        }
     }
 
-    /***************Diseño Responsive***************/
-
+    /*******Diseño Responsive********/
 
 /*****Estructura del Index: vista Tablet*****/
-@media (min-width:768px) {
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+
+@include tablet {
+
     .container {
         margin-top: 0vh;
-    }
-    .container__slider {
-        padding: 30px 60px;
+        &__slider {
+            padding: 30px 60px;
+        }
     }
     .title {
-        padding: 12vh 5vh 1vh 5vh
+        padding: 12vh 5vh 1vh 5vh;
     }
 
     .temas__principales--info--seccion {
         display: flex;
         flex-direction: row;
+        &__a {
+            .titulo-2 {
+                h3 {
+                    p {
+                        margin-left: 0%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
-    .temas__principales--info--seccion__a .titulo-2 h3 p {
-        margin-left: 0%;
-        text-align: center;
+
+    .temas__principales--info--general{
+        img {
+            width: 200%;
+            margin-left: 0%;
+        }
+        .imagen__pies {
+            width: 45%;
+            margin: 2px auto; 
+        }
     }
-    .temas__principales--info--general img {
-        width: 200%;
-        margin-left: 0%;
-    }
-    .temas__principales--info--general .imagen__pies {
-        width: 45%;
-        margin: 2px auto; 
-    }
+    
     .temas__secundarios {
         height: 60vh;
     }
@@ -153,8 +167,15 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
         padding: 1px 25px;
     }
 }
+
 /*****Estructura del Index: vista Desktop.*****/
-@media (min-width:1200px) {
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+} 
+
+@include desktop {
     .title {
         padding: 18vh 5vh 8vh 5vh;
         font-size: 2.5rem;

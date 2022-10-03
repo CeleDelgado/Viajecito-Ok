@@ -2,7 +2,7 @@
 @import "./abstracts/variables";*/
 
 /*BASE*/
-@import ".base/general";
+@import "./base/general";
 @import "./base/normalize";
 
 /*COMPONENTS*/
@@ -12,7 +12,7 @@
 /*LAYOUT*/
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/form";
+@import "./layout/forms";
 
 /*PAGES*/
 @import "./pages/index";

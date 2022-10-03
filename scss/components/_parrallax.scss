@@ -9,6 +9,7 @@
 	max-width: 100%;
 	position: relative;
     margin-top: -16%;
+    
 }
 .article__pais--contenedor__title{
 	color:#fff;
@@ -21,12 +22,14 @@
     border-radius: 30px;
     padding: 20px 10px;
     margin-left: 3vh;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
 }
-.article__pais--contenedor__title h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-}
+
 .img-noruega {
     background-image: url(assets/img/section-3/noruega-bandera.jpg);
     top: 4.3vh;
