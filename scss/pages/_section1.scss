@@ -1,7 +1,7 @@
 /******* Sobre nosotros**********/
 .portada {
     height: 24vh;
-    background-image: url(assets/img/buseando.jpg);
+    background-image: url(../../assets/img/buseando.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -22,7 +22,7 @@
 
 
 .temas-principales-section1 {
-    background-image: url(assets/img/fondo-pantalla-c.png);
+    background-image: url(../../assets/img/fondo-pantalla-c.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -41,7 +41,8 @@
         margin: 10vh 0px 10vh 0px;
         padding: 5px;
         border: 1.5px black solid;
-        position: absolute;    background-color: rgb(255, 255, 255);
+        position: absolute;  
+        background-color: rgb(255, 255, 255);
         display: flex;
         width: 40vh;
         margin-left: 10px;

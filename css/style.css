@@ -376,27 +376,27 @@ template {
 }
 
 .img-noruega {
-  background-image: url(assets/img/section-3/noruega-bandera.jpg);
+  background-image: url(../../assets/img/section-3/noruega-bandera.jpg);
   top: 4.3vh;
 }
 
 .img-dinamarca {
-  background-image: url(assets/img/section-3/dinamarca-bandera.jpg);
+  background-image: url(../../assets/img/section-3/dinamarca-bandera.jpg);
   top: 2vh;
 }
 
 .img-portugal {
-  background-image: url(assets/img/section-3/portugal-bandera.jpg);
+  background-image: url(../../assets/img/section-3/portugal-bandera.jpg);
   top: 2vh;
 }
 
 .img-italia {
-  background-image: url(assets/img/section-3/italia-bandera.jpeg);
+  background-image: url(../../assets/img/section-3/italia-bandera.jpeg);
   top: 2vh;
 }
 
 .img-suiza {
-  background-image: url(assets/img/section-3/suiza-bandera.jpg);
+  background-image: url(../../assets/img/section-3/suiza-bandera.jpg);
   top: 2vh;
 }
 
@@ -925,7 +925,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 */
 /***MAIN-INDEX***/
 .temas__principales {
-  background-image: url(assets/img/fondo-pantalla-a.png);
+  background-image: url(../../assets/img/fondo-pantalla-a.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 20%;
@@ -998,7 +998,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 }
 /***********ASIDE******************/
 .temas__secundarios {
-  background-image: url(assets/img/fondo-pantalla-b.png);
+  background-image: url(../../assets/img/fondo-pantalla-b.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1108,7 +1108,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 /******* Sobre nosotros**********/
 .portada {
   height: 24vh;
-  background-image: url(assets/img/buseando.jpg);
+  background-image: url(../../assets/img/buseando.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -1127,7 +1127,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 }
 
 .temas-principales-section1 {
-  background-image: url(assets/img/fondo-pantalla-c.png);
+  background-image: url(../../assets/img/fondo-pantalla-c.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1273,7 +1273,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 }
 /******* Galería***********/
 .temas-principales-section2 {
-  background-image: url(assets/img/fondo-pantalla-d.png);
+  background-image: url(../../assets/img/fondo-pantalla-d.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1415,7 +1415,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
   .link__paises--contenedor__menu li a:hover {
     background-color: rgba(255, 255, 255, 0.295);
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 13px;
     border: 2px rgb(255, 255, 255) solid;
     color: rgb(0, 0, 0);
@@ -1428,6 +1428,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
   .article__pais--info {
     margin-left: 20vh;
+    margin-top: 10%;
   }
   .article__pais--location {
     padding-bottom: 20%;
@@ -1450,7 +1451,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 }
 /******Main: ¿Cómo empezar?********/
 .temas-principales-section3 {
-  background-image: url(assets/img/fondo-pantalla-e.png);
+  background-image: url(../../assets/img/fondo-pantalla-e.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 0px 70px 0px;
@@ -1458,7 +1459,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 
 .portada__section3 {
   height: 100vw;
-  background-image: url(assets/img/imagen-cristo.jpg);
+  background-image: url(../../assets/img/imagen-cristo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -1669,14 +1670,14 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 }
 
 .temas-principales-section4 {
-  background-image: url(assets/img/fondo-pantalla-f.png);
+  background-image: url(../../assets/img/fondo-pantalla-f.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 115vh;
 }
 
 .portada__section4 {
-  background-image: url(assets/img/viejito.png);
+  background-image: url(../../assets/img/viejito.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 2rem;
@@ -1734,8 +1735,8 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     margin-left: 8%;
   }
   .boton {
-    padding: 15px;
-    margin: 25px 15px 25px 15px;
+    padding: 15px 5px;
+    margin: 25px 5px 25px 5px;
   }
   .formulario__comentarios {
     display: flex;

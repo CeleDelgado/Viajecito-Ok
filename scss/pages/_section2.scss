@@ -1,12 +1,12 @@
 /******* Galería***********/
 
 .temas-principales-section2 {
-    background-image: url(assets/img/fondo-pantalla-d.png);
+    background-image: url(../../assets/img/fondo-pantalla-d.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .link__paises--contenedor__menu {
-    background-color:  rgba(54, 58, 58, 0.384);
+    background-color: rgba(54, 58, 58, 0.384);
     width: 100vw;
     position: fixed;
     font-size: .8rem;
@@ -157,7 +157,7 @@
 
         li a:hover {
             background-color: rgba(255, 255, 255, 0.295);
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 13px;
             border: 2px rgb(255, 255, 255) solid;
             color: rgb(0, 0, 0);
@@ -171,6 +171,7 @@
     }
     .article__pais--info {
         margin-left: 20vh;
+        margin-top: 10%;
     }
     .article__pais--location {
         padding-bottom: 20%;
@@ -192,12 +193,4 @@
             object-fit: cover;
         }
     }
-    
-    // .link__paises--contenedor__menu li a:hover {
-    //     background-color: rgba(255, 255, 255, 0.555);
-    //     padding: 15px 20px;
-    //     border-radius: 10px;
-    //     border: 1.8px rgb(255, 255, 255) solid;
-    //     color: rgb(0, 0, 0);
-    // }
 }

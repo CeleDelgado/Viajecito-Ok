@@ -4,13 +4,13 @@
     margin-top: 115vh;
 }
 .temas-principales-section4 {
-    background-image: url(assets/img/fondo-pantalla-f.png);
+    background-image: url(../../assets/img/fondo-pantalla-f.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 115vh;
 }
 .portada__section4 {
-    background-image: url(assets/img/viejito.png);
+    background-image: url(../../assets/img/viejito.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2rem;
@@ -75,8 +75,8 @@
         margin-left: 8%;
     }
     .boton {
-        padding: 15px;
-        margin: 25px 15px 25px 15px;
+        padding: 15px 5px;
+        margin: 25px 5px 25px 5px;
     }
     .formulario__comentarios {
         display: flex;
