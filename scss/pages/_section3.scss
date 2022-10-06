@@ -1,14 +1,14 @@
 /******Main: ¿Cómo empezar?********/
 
 .temas-principales-section3 {
-    background-image: url(../../assets/img/fondo-pantalla-e.png);
+    background-image: url(../assets/img/fondo-pantalla-e.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0px 0px 70px 0px;
 }
 .portada__section3 {
     height: 100vw;
-    background-image: url(../../assets/img/imagen-cristo.jpg);
+    background-image: url(../assets/img/imagen-cristo.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     display: flex;
@@ -170,7 +170,6 @@
         margin: 5px 10%;
     }
     .article__d {
-        margin: 30px 10px;
         padding: 10px 10px;
         display: flex;
         flex-direction: row;

@@ -6,7 +6,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 /***MAIN-INDEX***/
 
 .temas__principales {
-    background-image: url(../../assets/img/fondo-pantalla-a.png);
+    background-image: url(../assets/img/fondo-pantalla-a.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 20%;
@@ -82,7 +82,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 /***********ASIDE******************/
 
 .temas__secundarios {
-        background-image: url(../../assets/img/fondo-pantalla-b.png);
+        background-image: url(../assets/img/fondo-pantalla-b.png);
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -90,6 +90,10 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
         justify-content: center;
         align-items: center;
         display: flex;
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+        width: auto;
+
         &--contenedor {
             border: .2rem black solid;
             padding: 10px 15px;
@@ -100,6 +104,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
             align-content: center;
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.658);
+
         }
         &--title {
             padding: 10px;

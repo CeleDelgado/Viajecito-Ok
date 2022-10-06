@@ -4,13 +4,13 @@
     margin-top: 115vh;
 }
 .temas-principales-section4 {
-    background-image: url(../../assets/img/fondo-pantalla-f.png);
+    background-image: url(../assets/img/fondo-pantalla-f.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 115vh;
 }
 .portada__section4 {
-    background-image: url(../../assets/img/viejito.png);
+    background-image: url(../assets/img/viejito.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2rem;
@@ -54,6 +54,7 @@
         padding: 20px;
     }
 }
+
 
 /*****Estructura del Section-4: vista Tablet. CONTACTO*****/
 @mixin tablet {
