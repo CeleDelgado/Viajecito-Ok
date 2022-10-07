@@ -1101,9 +1101,15 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   .pie__pagina--menu__footer {
     height: 8vh;
   }
-  .encabezado__menu li a:hover {
+  .encabezado__menu .dropdown li a:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 3px;
+    border-radius: 13px;
+    border: 1px red solid;
+  }
+  .encabezado__menu .dropdown-item li a:hover {
     background-color: rgba(255, 0, 0, 0.295);
-    padding: 15px;
+    padding: 1px;
     border-radius: 13px;
     border: 1px red solid;
   }
