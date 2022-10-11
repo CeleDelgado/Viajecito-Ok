@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider--calendario{
+    width: 90%;
+    width: 100%;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+    }
+    li {
+        width: 100%;
+        list-style: none;
+    }
+    img {
+        width: 90%;
+        height: 100%; 
+    }
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    33%{margin-left: 0;}
+    
+    33%{margin-left: -100%;}
+    66%{margin-left: -100%;}
+    
+    66%{margin-left: -200%;}
+    99%{margin-left: -200%;}
+
+    99%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+/***** vista Tablet****/
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content
+    }
+} 
+@include tablet {
+    .slider--calendario {
+        margin-left: -1%;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content
+    }
+}
+@include desktop {
+    .slider--calendario {
+        width: 50%;
+        margin-left: 15%;
+    }
+}
+
+/*carrusel 2*/

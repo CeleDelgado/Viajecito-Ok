@@ -350,6 +350,70 @@ template {
 }
 
 /*COMPONENTS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider--calendario {
+  width: 90%;
+  width: 100%;
+  overflow: hidden;
+}
+.slider--calendario ul {
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 400%;
+}
+.slider--calendario li {
+  width: 100%;
+  list-style: none;
+}
+.slider--calendario img {
+  width: 90%;
+  height: 100%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -200%;
+  }
+  99% {
+    margin-left: -200%;
+  }
+  99% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/***** vista Tablet****/
+@media (min-width: 768px) {
+  .slider--calendario {
+    margin-left: -1%;
+  }
+}
+@media (min-width: 1200px) {
+  .slider--calendario {
+    width: 50%;
+    margin-left: 15%;
+  }
+}
+/*carrusel 2*/
 /****************PARALLAX*******************/
 .article__pais--parallax {
   background-attachment: fixed;
@@ -534,6 +598,47 @@ components . Contiene los estilos de los distintos componentes que emplearemos d
   z-index: 1;
 }
 
+.article__d--table {
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  background: linear-gradient(#777777, #f5a8ff);
+}
+
+table {
+  color: #fff;
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rgba(243, 140, 210, 0.527);
+}
+
+th {
+  padding: 20px 6px;
+  font-weight: 50;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px 6px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:active {
+  background: rgba(243, 103, 199, 0.692);
+}
+
+/***** vista Tablet****/
+@media (min-width: 768px) {
+  tbody tr:hover {
+    background: rgba(243, 103, 199, 0.5);
+  }
+}
 /*LAYOUT*/
 /***HEADER***/
 /*detalles generales de personalizacion, centrando el nav, modificando colores, margenes, bordes*/
@@ -1607,10 +1712,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   color: rgb(255, 255, 255);
 }
 .article__d th {
-  background-color: rgb(0, 0, 0);
-}
-.article__d--table--td__pais {
-  background-color: rgb(255, 47, 47);
+  background-color: rgb(89, 89, 90);
 }
 
 /***Estructura del Section-3: vista Tablet. Cómo empezar?*****/
@@ -1677,10 +1779,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
   .article__d--table {
     justify-content: center;
-    padding: 30px;
-    margin-top: 18vh;
     align-items: center;
-    margin-left: 25vh;
   }
 }
 /*********Main: Contacto****************/
