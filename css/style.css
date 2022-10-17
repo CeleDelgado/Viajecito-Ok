@@ -680,7 +680,7 @@ tbody tr:active {
 
 /***** vista Tablet****/
 @media (min-width: 768px) {
-  tbody tr:hover {
+  .article__d--table tbody tr:hover {
     background: rgba(243, 103, 199, 0.5);
   }
 }
@@ -938,7 +938,7 @@ layout . En esta carpeta aparecen los estilos relacionados con la estructura de 
 /*************FORMS***********/
 /*form: PROGRAMA UNA ENTREVISTA*/
 .row .formulario__entrevista {
-  width: 80%;
+  width: 95%;
   border: 2.5px black solid;
   margin-left: auto;
   margin-right: auto;
@@ -1120,44 +1120,6 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   padding: 5px;
 }
 
-/* slide-in-elliptic-top-fwd */
-.temas__principales--info--seccion {
-  -webkit-animation: temas__principales--info--seccion 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: temas__principales--info--seccion 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes temas__principales--info--seccion {
-  0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-    transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-    transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-    transform-origin: 50% 1400px;
-    opacity: 1;
-  }
-}
-@keyframes temas__principales--info--seccion {
-  0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-    transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-    transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-    transform-origin: 50% 1400px;
-    opacity: 1;
-  }
-}
 /***********ASIDE******************/
 .temas__secundarios {
   background-image: url(../assets/img/fondo-pantalla-b.png);
@@ -1277,6 +1239,10 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /******* Sobre nosotros**********/
+.body__section1 {
+  margin: -2px;
+}
+
 .portada {
   height: 24vh;
   background-image: url(../assets/img/buseando.jpg);
@@ -1458,7 +1424,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   justify-content: center;
   align-items: center;
   height: 8.3001vh;
-  margin: -3%;
+  margin-left: -3%;
 }
 .link__paises--contenedor__menu li a:active {
   background-color: rgba(255, 255, 255, 0.295);
@@ -1534,6 +1500,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-left: -1.5%;
   }
   .link__paises--menu li {
     padding: 3px 25px;
@@ -1569,7 +1536,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /*****Estructura del Section-2 vista Deskyop. Galería*****/
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .encabezado {
     height: 8vh;
   }
@@ -1793,7 +1760,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /*****Estructura del Section-3: vista Deskyop. Cómo empezar?*****/
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .main__como-empezar {
     display: grid;
     grid-template-columns: 1fr;
@@ -1894,6 +1861,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     width: 100%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: -141%;
   }
   .formulario__entrevista__container--botons {
     margin-left: 8%;
@@ -1924,12 +1892,16 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /*****Estructura del Section-4: vista Deskyop. CONTACTO*****/
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .temas-principales-section4 {
     padding-bottom: 130vh;
   }
+  .row .formulario__entrevista {
+    margin-top: 40%;
+    width: 150%;
+  }
   .datos-contacto {
-    padding: 35px 75px;
+    padding: 35px 45px;
     margin-bottom: 0%;
     width: 150%;
   }

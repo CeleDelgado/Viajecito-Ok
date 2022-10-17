@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="icon/png" href="./assets/icons/logo-avion.png">
     <link rel="stylesheet" href="scss/main.scss">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Viajecito ok</title>
 </head>
@@ -102,18 +103,15 @@
                                                     href="./pages/section2.html#dinamarca">Dinamarca </a></button>
                                         </li>
                                         <li><button class="dropdown-item" type="button"><a
-                                                    href="./pages/section2.html#finlandia">Finlandia</a></button>
-                                        </li>
-                                        <li><button class="dropdown-item" type="button"><a
-                                                    href="./pages/section2.html#islandia">Islandia</a></button>
-                                        </li>
-                                        <li><button class="dropdown-item" type="button"><a
-                                                    href="./pages/section2.html#suiza">Suiza</a> </button></li>
-                                        <li><button class="dropdown-item" type="button"><a
-                                                    href="./pages/section2.html#canada">Canadá</a></button></li>
-                                        <li><button class="dropdown-item" type="button"><a
                                                     href="./pages/section2.html#portugal">Portugal</a></button>
                                         </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                            href="./pages/section2.html#italia">Italia</a></button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button"><a
+                                            href="./pages/section2.html#suiza">Suiza</a></button>
+                                        </li>
+                                        
                                     </ul>
 
                                 </div>
@@ -193,7 +191,7 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
                         <div class="temas__principales--slider">
-                            <h1 class="title">Bienvenidos a "Viajecito Ok"</h1>
+                            <h1 class="title"> Bienvenidos a "Viajecito Ok"</h1>
                             <div class="container__slider">
 
                                 <div class="container">
@@ -227,7 +225,7 @@
                 </div>
 
                 <article class="temas__principales--info--general">
-                    <section class="temas__principales--info--seccion">
+                    <section data-aos="fade-up" class="temas__principales--info--seccion">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-xs-12">
                                 <div class="temas__principales--info--seccion__a">
@@ -251,7 +249,7 @@
                     </section>
 
                     <article class="temas__principales--info--general">
-                        <section class="temas__principales--info--seccion">
+                        <section data-aos="fade-down" class="temas__principales--info--seccion">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-xs-12">
                                     <div class="temas__principales--info--img">
@@ -282,7 +280,7 @@
                         </section>
                     </article>
                     <article class="temas__principales--info--general">
-                        <section class="temas__principales--info--seccion">
+                        <section data-aos="fade-right" class="temas__principales--info--seccion">
                             <div class="row">
                                 <div class="col-lg-6 col-md-5 col-xs-12">
                                     <article>
@@ -307,7 +305,7 @@
                         </section>
                     </article>
                     <article class="temas__principales--info--general">
-                        <section class="temas__principales--info--seccion">
+                        <section data-aos="fade-left" class="temas__principales--info--seccion">
                             <div class="row">
                                 <div class="col-lg-6 col-md-5 col-xs-12">
                                     <div class="temas__principales--info--img">
@@ -335,7 +333,7 @@
                         </section>
                     </article>
                     <article class="temas__principales--info--general">
-                        <section class="temas__principales--info--seccion">
+                        <section data-aos="fade-up-right" class="temas__principales--info--seccion">
                             <div class="row">
                                 <div class="col-lg-6 col-md-5 col-xs-12">
                                     <article>
@@ -369,7 +367,7 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12">
                     <section class="temas__secundarios">
-                        <div class="temas__secundarios--contenedor">
+                        <div  data-aos="fade-up-left" class="temas__secundarios--contenedor">
                             <h4 class="temas__secundarios--title">¿Cómo es vivir en Copenhague?</h4>
                             <iframe class="temas__secundarios--video" width="360" height="215"
                                 src="https://www.youtube.com/embed/-Q8XvRX-3q8" title="YouTube video player"
@@ -411,7 +409,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
-                        <article>
+                        <article data-aos="fade-down-right">
                             <p class="pie__pagina--eslogan__a">"Esta es una empresa que no para de soñar, queremos
                                 ayudarte a que
                                 veas
@@ -420,7 +418,7 @@
                         </article>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xs-12">
-                        <article class="pie__pagina--logo__avion">
+                        <article data-aos="fade-down-left" class="pie__pagina--logo__avion">
                             <img src="./assets/icons/avion-gif.gif" alt="avion tipo gif" width="200vw">
                             <div class="pie__pagina--logo__cartel">
                                 <img src="./assets/icons/logo luminoso.gif" alt="logo luminoso" width="400vw">
@@ -456,6 +454,13 @@
     </footer>
 
     <script src="./pages/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
 
+</body>
 </html>

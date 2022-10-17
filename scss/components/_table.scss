@@ -42,7 +42,7 @@ tbody tr:active {
 } 
 @include tablet {
 
-    tbody tr:hover {
+    .article__d--table tbody tr:hover {
         background: rgba(243, 103, 199, 0.5);
     }
 }

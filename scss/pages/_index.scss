@@ -40,44 +40,6 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
     }
 }
 
-/* slide-in-elliptic-top-fwd */
-.temas__principales--info--seccion {
-	-webkit-animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: temas__principales--info--seccion 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-@-webkit-keyframes temas__principales--info--seccion {
-    0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
-    }
-    100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
-    opacity: 1;
-    }
-}
-@keyframes temas__principales--info--seccion {
-    0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-            transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
-    }
-    100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-            transform-origin: 50% 1400px;
-    opacity: 1;
-    }
-}
-
 /***********ASIDE******************/
 
 .temas__secundarios {

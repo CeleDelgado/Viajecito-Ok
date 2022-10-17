@@ -13,11 +13,12 @@
     <link rel="shortcut icon" type="icon/png" href="../assets/icons/logo-avion.png">
     <link rel="stylesheet" href="../scss/main.scss">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Sobre nosotros</title>
 </head>
 
-<body>
+<body class="body__section1">
     <!-- Damos un div segun cada seccion de la pagina para maquetear con bootstrap, comenzamos por el header -->
     <header>
         <!-- Agregamos el navegador y una fila entera para el mismo -->
@@ -107,19 +108,13 @@
                                                 </a></button>
                                         </li>
                                         <li><button class="dropdown-item" type="button"><a
-                                                    href="../pages/section2.html#finlandia">Finlandia</a></button>
+                                                    href="../pages/section2.html#portugal">Portugal</a></button>
                                         </li>
                                         <li><button class="dropdown-item" type="button"><a
-                                                    href="../pages/section2.html#islandia">Islandia</a></button>
+                                                    href="../pages/section2.html#italia">Italia</a></button>
                                         </li>
                                         <li><button class="dropdown-item" type="button"><a
                                                     href="../pages/section2.html#suiza">Suiza</a> </button></li>
-                                        <li><button class="dropdown-item" type="button"><a
-                                                    href="../pages/section2.html#canada">Canadá</a></button>
-                                        </li>
-                                        <li><button class="dropdown-item" type="button"><a
-                                                    href="../pages/section2.html#portugal">Portugal</a></button>
-                                        </li>
                                     </ul>
 
                                 </div>
@@ -213,9 +208,9 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
                         <article class="container__a">
-                            <img class="container__a--img--a" src="../assets/img/nosotros-asensor.JPG"
+                            <img data-aos="flip-right" class="container__a--img--a" src="../assets/img/nosotros-asensor.JPG"
                                 alt="imagen en el asensor" width="250vh">
-                            <img class="container__a--img--b" src="../assets/img/colon.jpg"
+                            <img data-aos="flip-left" class="container__a--img--b" src="../assets/img/colon.jpg"
                                 alt="imagen en la orilla del río" width="150vh">
                             <div class="container__a--info">
                                 <h2 id="quienes__somos">¿Quienes somos?</h2>
@@ -249,7 +244,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5 col-xs-12">
-                            <div class="container__b--info--b">
+                            <div data-aos="flip-down" class="container__b--info--b">
                                 <h2 id="como__empezamos">¿Cómo comenzamos?</h2>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nostrum vel
                                     distinctio
@@ -275,7 +270,7 @@
                                     ipsam.
                                 </p>
                             </div>
-                            <img class="container__c--img" src="../assets/img/cristo-redentor-c.jpg"
+                            <img div data-aos="flip-up" class="container__c--img" src="../assets/img/cristo-redentor-c.jpg"
                                 alt="imagen del Cristo Redentor- Brasil" width="400vw">
                         </article>
                     </div>
@@ -310,7 +305,15 @@
         </div>
 
     </footer>
-    <script src="../pages/bootstrap.bundle.min.js"></script>
-</body>
 
+    <script src="../pages/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+</body>
 </html>

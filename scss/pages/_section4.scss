@@ -71,6 +71,7 @@
         width: 100%;
         margin-left: 10%;
         margin-right: 10%;
+        margin-top: -141%;
     }
     .formulario__entrevista__container--botons {
         margin-left: 8%;
@@ -103,7 +104,7 @@
 
 /*****Estructura del Section-4: vista Deskyop. CONTACTO*****/
 @mixin desktop {
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         @content
     }
 }  
@@ -112,8 +113,12 @@
     .temas-principales-section4 {
         padding-bottom: 130vh;
     }
+    .row .formulario__entrevista {
+        margin-top: 40%;
+        width: 150%;
+    }
     .datos-contacto {
-        padding: 35px 75px;
+        padding: 35px 45px;
         margin-bottom: 0%;
         width: 150%;
     }

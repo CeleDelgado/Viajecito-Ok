@@ -1,5 +1,6 @@
 /******* Galería***********/
 
+
 .temas-principales-section2 {
     background-image: url(../assets/img/fondo-pantalla-d.png);
     background-size: cover;
@@ -14,7 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 8.3001vh;
-    margin: -3%;
+    margin-left: -3%;
 
     & li a:active {
         background-color: rgba(255, 255, 255, 0.295);
@@ -95,6 +96,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin-left: -1.5%;
     }
     .link__paises--menu li {
         padding: 3px 25px;
@@ -135,7 +137,7 @@
 /*****Estructura del Section-2 vista Deskyop. Galería*****/
 
 @mixin desktop {
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         @content
     }
 }  
