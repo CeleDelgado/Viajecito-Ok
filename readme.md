@@ -163,4 +163,4 @@ Este proyecto tiene la licencia apache 2.0; consulte el archivo [licencia-apache
 
 </div>
 
-<script src="https://gist.github.com/rxaviers/7360908.js"></script>
+
