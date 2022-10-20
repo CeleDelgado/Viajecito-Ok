@@ -22,7 +22,7 @@ Fecha de la última versión del proyecto: Agosto.
 <div id="titulo">
 <h1 align="center">
   <p align="center"> 🔆  Viajecito Ok 🔆  </p>
-  <img src="../viajecito-ok/assets/icons/avion-gif.gif" alt="logo de avion, viajecito ok">
+  <img src="assets/icons/avion-gif.gif" alt="logo de avion, viajecito ok">
 </h1>
 </div>
 
