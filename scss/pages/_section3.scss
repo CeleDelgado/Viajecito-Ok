@@ -1,4 +1,7 @@
 /******Main: ¿Cómo empezar?********/
+.main__como-empezar {
+    margin-right: -1px;
+}
 
 .temas-principales-section3 {
     background-image: url(../assets/img/fondo-pantalla-e.png);
@@ -31,24 +34,27 @@
 
 .article__a {
     display: flex;
+    width: 90%;
     flex-direction: column;
-    margin: 220px 60px 50px 60px;
+    margin: 220px 20px 50px 20px;
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
     top: 80%;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,145,169,1) 31%, rgba(255,255,255,1) 100%);
 
     h2 {
         padding: 20px;
         margin: 15px;
         text-align: center;
-        background-color: rgba(255, 0, 0, 0.432);
+        background-color: rgba(255, 255, 255, 0.651);
+        border-radius: 10px;
     }
     p {
         text-align: justify;
         padding: 5px;
-        background-color: rgba(255, 0, 0, 0.432);
+        background-color: rgba(255, 255, 255, 0.63);
+        border-radius: 10px;
     }
 }
 
@@ -63,19 +69,21 @@
     align-items: center;
     justify-content: center;
     top: 50%;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,221,158,1) 27%, rgba(255,255,255,1) 100%);
 
     h2 {
         padding: 20px;
         margin: 15px;
         text-align: center;
         font-weight: bold;
-        background-color: rgba(68, 68, 68, 0.473);
+        background-color: rgba(255, 255, 255, 0.562);
+        border-radius: 10px;
     }
     p {
         text-align: justify;
         padding: 5px;
-        background-color: rgba(68, 68, 68, 0.473);
+        background-color: rgba(255, 255, 255, 0.575);
+        border-radius: 10px;
     }
 }
 
@@ -86,19 +94,21 @@
     align-items: center;
     justify-content: center;
     top: 80%;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,221,158,1) 27%, rgba(255,255,255,1) 100%);
 
     h2 {
         padding: 20px;
         margin: 15px;
         text-align: center;
         font-weight: bold;
-        background-color: rgba(68, 68, 68, 0.473);
+        background-color: rgba(255, 255, 255, 0.548);
+        border-radius: 10px;
     }
     p {
         text-align: justify;
         padding: 5px;
-        background-color: rgba(68, 68, 68, 0.473);
+        background-color: rgba(255, 255, 255, 0.575);
+        border-radius: 10px;
     }
 }
 
@@ -151,6 +161,11 @@
 } 
 
 @include tablet {
+    .main__como-empezar {
+        overflow-x: hidden;
+    }
+    
+
     .portada__section3--title {
         margin-top: 35%;
         padding: 5px 10px;

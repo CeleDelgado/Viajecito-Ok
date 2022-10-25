@@ -69,7 +69,8 @@
         margin: 60px 50px;
         padding: 20px;
         flex-direction: column;
-        background-color: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(160,255,158,1) 90%, rgba(0,0,0,1) 100%);
+        text-align: justify;
     }
 }
 
@@ -81,12 +82,14 @@
         padding: 40px 1px;
         background-color:  rgba(255, 0, 0, 0.37);
         color: rgb(255, 255, 255);
+        text-align: justify;
     }
     &--info--b {
         margin: 10vh 1vh;
         padding: 40px 1px;
         background-color:  rgba(214, 138, 16, 0.397);
         color: rgb(255, 255, 255);
+        text-align: justify;
     }
 }
 
@@ -102,7 +105,8 @@
         margin: 10vh 5vh 10vh 5vh;
         padding: 40px 20px;
         width: 70vw;
-        background-color: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(192,207,255,1) 0%, rgba(255,255,255,0.8491771708683473) 68%);
+        text-align: justify;
     }
     &--img {
         display: flex;

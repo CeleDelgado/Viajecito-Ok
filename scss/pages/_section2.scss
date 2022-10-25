@@ -1,5 +1,8 @@
 /******* Galería***********/
-
+.main__galeria {
+    overflow-x: hidden;
+    margin-right: -1px;
+}
 
 .temas-principales-section2 {
     background-image: url(../assets/img/fondo-pantalla-d.png);
@@ -51,7 +54,7 @@
 	width: 80%;
     text-align: justify;
     margin: 20vh 5vh;
-    background-color: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(184, 184, 184) 100%);
 }
 .article__pais--img {
     display: flex;

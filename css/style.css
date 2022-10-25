@@ -1306,7 +1306,8 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   margin: 60px 50px;
   padding: 20px;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(160, 255, 158) 90%, rgb(0, 0, 0) 100%);
+  text-align: justify;
 }
 
 .container__b {
@@ -1317,12 +1318,14 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   padding: 40px 1px;
   background-color: rgba(255, 0, 0, 0.37);
   color: rgb(255, 255, 255);
+  text-align: justify;
 }
 .container__b--info--b {
   margin: 10vh 1vh;
   padding: 40px 1px;
   background-color: rgba(214, 138, 16, 0.397);
   color: rgb(255, 255, 255);
+  text-align: justify;
 }
 
 .container__c {
@@ -1337,7 +1340,8 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   margin: 10vh 5vh 10vh 5vh;
   padding: 40px 20px;
   width: 70vw;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgb(192, 207, 255) 0%, rgba(255, 255, 255, 0.8491771709) 68%);
+  text-align: justify;
 }
 .container__c--img {
   display: flex;
@@ -1409,6 +1413,11 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /******* Galería***********/
+.main__galeria {
+  overflow-x: hidden;
+  margin-right: -1px;
+}
+
 .temas-principales-section2 {
   background-image: url(../assets/img/fondo-pantalla-d.png);
   background-size: cover;
@@ -1459,7 +1468,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   width: 80%;
   text-align: justify;
   margin: 20vh 5vh;
-  background-color: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(184, 184, 184) 100%);
 }
 
 .article__pais--img {
@@ -1588,6 +1597,10 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   }
 }
 /******Main: ¿Cómo empezar?********/
+.main__como-empezar {
+  margin-right: -1px;
+}
+
 .temas-principales-section3 {
   background-image: url(../assets/img/fondo-pantalla-e.png);
   background-size: cover;
@@ -1619,24 +1632,27 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 
 .article__a {
   display: flex;
+  width: 90%;
   flex-direction: column;
-  margin: 220px 60px 50px 60px;
+  margin: 220px 20px 50px 20px;
   padding: 10px 20px;
   align-items: center;
   justify-content: center;
   top: 80%;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 145, 169) 31%, rgb(255, 255, 255) 100%);
 }
 .article__a h2 {
   padding: 20px;
   margin: 15px;
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.432);
+  background-color: rgba(255, 255, 255, 0.651);
+  border-radius: 10px;
 }
 .article__a p {
   text-align: justify;
   padding: 5px;
-  background-color: rgba(255, 0, 0, 0.432);
+  background-color: rgba(255, 255, 255, 0.63);
+  border-radius: 10px;
 }
 
 .article__b--c {
@@ -1651,19 +1667,21 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   align-items: center;
   justify-content: center;
   top: 50%;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 221, 158) 27%, rgb(255, 255, 255) 100%);
 }
 .b h2 {
   padding: 20px;
   margin: 15px;
   text-align: center;
   font-weight: bold;
-  background-color: rgba(68, 68, 68, 0.473);
+  background-color: rgba(255, 255, 255, 0.562);
+  border-radius: 10px;
 }
 .b p {
   text-align: justify;
   padding: 5px;
-  background-color: rgba(68, 68, 68, 0.473);
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 10px;
 }
 
 .c {
@@ -1673,19 +1691,21 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   align-items: center;
   justify-content: center;
   top: 80%;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 221, 158) 27%, rgb(255, 255, 255) 100%);
 }
 .c h2 {
   padding: 20px;
   margin: 15px;
   text-align: center;
   font-weight: bold;
-  background-color: rgba(68, 68, 68, 0.473);
+  background-color: rgba(255, 255, 255, 0.548);
+  border-radius: 10px;
 }
 .c p {
   text-align: justify;
   padding: 5px;
-  background-color: rgba(68, 68, 68, 0.473);
+  background-color: rgba(255, 255, 255, 0.575);
+  border-radius: 10px;
 }
 
 .article__d {
@@ -1729,6 +1749,9 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 
 /***Estructura del Section-3: vista Tablet. Cómo empezar?*****/
 @media (min-width: 768px) {
+  .main__como-empezar {
+    overflow-x: hidden;
+  }
   .portada__section3--title {
     margin-top: 35%;
     padding: 5px 10px;
