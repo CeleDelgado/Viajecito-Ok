@@ -22,7 +22,7 @@ Fecha de la última versión del proyecto: Agosto.
 <div id="titulo">
 <h1 align="center">
   <p align="center"> 🔆  Viajecito Ok 🔆  </p>
-  <img src="../viajecito-ok/assets/icons/avion-gif.gif" alt="logo de avion, viajecito ok">
+  <img src="assets/icons/avion-gif.gif" alt="logo de avion, viajecito ok">
 </h1>
 </div>
 
@@ -39,7 +39,7 @@ Fecha de la última versión del proyecto: Agosto.
   <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
   <img alt="Nodejs" src="https://img.shields.io/badge/-Node.js-43853d?style=flat-square&logo=nodedotjs&logoColor=white" />
   <img alt="Sass" src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
-  <img alt="Markdown" src=" https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
+  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
   <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
   
   </div>
@@ -105,7 +105,7 @@ Bienvenidos a nuestro sitio web “viajecito ok”, se encontrará con una pági
  
  Contamos con un sector de comentarios para que su opinión nos ayude a crecer en base a sus necesidades y también con un sector donde podrán programar una entrevista con nosotros. Esperamos que lo disfruten y sea de mucha ayuda para cada uno de ustedes.
 
-<img src="../viajecito-ok/assets/img/portada.jpg">
+<img src="assets/img/portada.jpg">
 </p>
 </div>
 
@@ -163,4 +163,4 @@ Este proyecto tiene la licencia apache 2.0; consulte el archivo [licencia-apache
 
 </div>
 
-<script src="https://gist.github.com/rxaviers/7360908.js"></script>
+
