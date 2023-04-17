@@ -1,10 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.1"
-  }
-}
-
-{
+  },
+  
   "keywords": [],
   "name": "viajecito-ok",
   "engines": {
@@ -17,7 +15,7 @@
     "url": "https://celedelgado.github.io/Viajecito-Ok/"
   },
   "author": "Celeste Delgado",
-  "license": "MIT",
+  "license": "MIT"
 }
 
 
