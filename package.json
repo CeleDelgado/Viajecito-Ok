@@ -7,15 +7,19 @@
 {
   "keywords": [],
   "name": "viajecito-ok",
+  "engines": {
+    "node": "14.x"
+  },
   "version": "MAJOR.MINOR.PATCH",
   "dependencies": "bootstrap: ^5.2.1",
   "repository": {
-    "type”: "git",
+    "type": "git",
     "url": "https://celedelgado.github.io/Viajecito-Ok/"
   },
   "author": "Celeste Delgado",
   "license": "MIT",
 }
+
 
 
 
