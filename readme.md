@@ -139,8 +139,6 @@ Usamos [Git SCM](https://git-scm.com/) para el control de versiones. Para conoce
 
 ## 💠 Autores
 
-* **Federico Cundino** - *Trabajo inicial,   Ecomerce y marketing digital* - [Fede Cundino](https://www.linkedin.com/in/federico-cundino/)
-
 * **Celeste Delgado** - *Trabajo inicial, desarrollo web, diseño gráfico del sitio* - [Cele Delgado](https://github.com/CeleDelgado)
 
 </div>
