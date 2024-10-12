@@ -105,7 +105,7 @@ Bienvenidos a nuestro sitio web “viajecito ok”, se encontrará con una pági
  
  Contamos con un sector de comentarios para que su opinión nos ayude a crecer en base a sus necesidades y también con un sector donde podrán programar una entrevista con nosotros. Esperamos que lo disfruten y sea de mucha ayuda para cada uno de ustedes.
 
-<img src="assets/img/portada.jpg">
+
 </p>
 </div>
 
@@ -138,8 +138,6 @@ Usamos [Git SCM](https://git-scm.com/) para el control de versiones. Para conoce
 <div id="autores">
 
 ## 💠 Autores
-
-* **Federico Cundino** - *Trabajo inicial,   Ecomerce y marketing digital* - [Fede Cundino](https://www.linkedin.com/in/federico-cundino/)
 
 * **Celeste Delgado** - *Trabajo inicial, desarrollo web, diseño gráfico del sitio* - [Cele Delgado](https://github.com/CeleDelgado)
 
