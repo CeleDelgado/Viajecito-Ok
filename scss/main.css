@@ -1591,6 +1591,10 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   justify-content: center;
   align-items: center;
 }
+.portada__section3 img {
+  margin-bottom: -10%;
+  margin-top: 20%;
+}
 .portada__section3--title {
   font-size: 0.9rem;
   font-style: oblique;
@@ -1766,6 +1770,8 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
   .portada__section3 {
     background-size: cover;
     height: 100vh;
+    margin-top: -70%;
+    margin-bottom: 20%;
   }
   .portada__section3--title {
     margin-top: 50%;

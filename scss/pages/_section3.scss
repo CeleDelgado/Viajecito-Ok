@@ -18,6 +18,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    img {
+        margin-bottom: -10%;
+        margin-top: 20%;
+    }
+
 
     &--title {
         font-size: .9rem;
@@ -29,6 +34,7 @@
         padding: 30px 10px;
         border-radius: 10px;
         margin: 60vh 5vh 5vh 5vh;
+        
     }
 }
 
@@ -218,11 +224,14 @@
     .portada__section3 {
         background-size: cover;
         height: 100vh;
+        margin-top: -70%;
+        margin-bottom: 20%;        
 
         &--title {
             margin-top: 50%;
             padding: 3px 50px;
             font-size: .7rem;
+
         }
     }
     .article__a {
