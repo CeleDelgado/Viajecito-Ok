@@ -1216,7 +1216,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 
 .portada {
   height: 24vh;
-  background-image: url(../assets/img/buseando.jpg);
+  background-image: url(../assets/img/nuevas/fuenteh.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
