@@ -1583,7 +1583,7 @@ Contiene los estilos específicos para determinadas vistas (páginas) de nuestro
 
 .portada__section3 {
   height: 100vw;
-  background-image: url(../assets/img/imagen-cristo.jpg);
+  background-image: url("../../assets/img/nuevas/fuenteh.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
